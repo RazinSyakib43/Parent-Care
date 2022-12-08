@@ -189,6 +189,26 @@ $row_test = mysqli_fetch_assoc($result_test);
             DATA = response;
         }
 
+        form.addEventListener('submit', (event) => {
+            event.preventDefault();
+            event.stopPropagation();
+
+            let filteredNews = null;
+            const inputSearch = event.srcElement[0];
+
+            // console.log(event);
+            for (const article of DATA.articles) {
+                filteredNews = DATA.articles.filter((item) => {
+                    return item.title === inputSearch.value;
+                });
+            }
+
+            newsContainer.innerHTML = '';
+            for (const article of filteredNews) {
+                newsContainer.innerHTML += templateNews(article);
+            }
+        });
+
         function templateNews(data) {
             return `
             <div class="col-12 col-md-6 col-lg-3 mt-4" id="news-item">
