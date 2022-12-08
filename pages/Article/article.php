@@ -89,7 +89,7 @@ $row_test = mysqli_fetch_assoc($result_test);
             </form>
 
             <main>
-                <div id="news-container" class="row" data-aos="fade-up" data-aos-once="true" data-aos-delay="300">
+                <div id="news-container" class="row" data-aos="fade-up" data-aos-once="true" data-aos-delay="200">
                 </div>
             </main>
         </div>
