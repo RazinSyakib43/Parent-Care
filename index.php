@@ -3,16 +3,6 @@
 include 'koneksi.php';
 session_start();
 
-if (!isset($_SESSION['id'])) {
-
-    //Penggunaan javascript
-    echo "<script>var elm = document.getElementById('login');
-elm.style.display = 'none';</script>";
-
-    //Penggunaan tag style pada head
-    echo '<style>button {display:none;}</style>';
-}
-
 $query =
     "SELECT * from tb_dokter";
 
@@ -55,15 +45,15 @@ $row_test = mysqli_fetch_assoc($result_test);
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <div class="navbar-nav ms-auto">
                         <a class="nav-link active" aria-current="page" href="index.php">Home</a>
-                        <a class="nav-link" href="#">Artikel</a>
-                        <a class="nav-link" href="#">FAQ</a>
+                        <a class="nav-link" href="pages/Article/article.php">Artikel</a>
+                        <a class="nav-link" href="pages/FAQ/faq.php">FAQ</a>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Layanan
                             </a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="#">Konsultasi</a></li>
-                                <li><a class="dropdown-item" href="#">Tes Minat</a></li>
+                                <li><a class="dropdown-item" href="pages/Tes Mental Health/tes-mental-health.php">Tes Kesehatan Mental</a></li>
                             </ul>
                         </li>
                         <a class="nav-link" href="#">Discuss</a>
@@ -152,21 +142,13 @@ $row_test = mysqli_fetch_assoc($result_test);
                 </div>
             </div>
             <div class="row">
-                <div class="col-12 col-md-6 col-lg-3 mt-4" data-aos="fade-up" data-aos-once="true" data-aos-delay="100">
-                    <div class="card">
-                        <img src="asset/image/Hero/Rectangle 24.png" alt="">
-                        <p class="article-categories">TIPS</p>
-                        <a href="#">
-                            <h6>10 faktor penyebab kekerasan pada anak</h6>
-                        </a>
-                        <p class="article-time">11 July 2022</p>
-                    </div>
+                <div id="news-container" class="row" data-aos="fade-up" data-aos-once="true" data-aos-delay="200">
                 </div>
             </div>
             <div class="row">
                 <div class="col-12 see-more" data-aos="fade-up" data-aos-once="true" data-aos-delay="100">
                     <div class="btn-detail mt-5 text-center">
-                        <a href="article1.html"><button type="button" class="btn btn-second">More
+                        <a href="pages/Article/article.php"><button type="button" class="btn btn-second">More
                                 Article</button></a>
                     </div>
                 </div>
@@ -224,11 +206,12 @@ $row_test = mysqli_fetch_assoc($result_test);
     <section class="footer mt-5">
         <div class="container">
             <div class="row">
+
                 <div class="col-12 col-md-4 col-lg-3 mt-3">
                     <div class="logo-footer">
                         <a class="navbar-brand" href="#">ParentCare.</a>
                     </div>
-                    <div class="info mt-lg-4">
+                    <div class="info mt-lg-2">
                         <div class="row">
                             <div class="col-12">
                                 <a href="" class=" infotxt">Layanan
@@ -238,11 +221,17 @@ $row_test = mysqli_fetch_assoc($result_test);
                     </div>
                     <div class="sosmed mt-lg-4">
                         <div class="row">
-                            <div class="col-12">
-                                <a href="https://wa.me/6281393015244" target="_blank" class="infotxt"><i class="bx bxl-whatsapp pe-2"></i></a>
-                                <a href="#"><i class='bx bxl-instagram px-2'></i></a>
-                                <a href="#"><i class='bx bxl-facebook-circle ps-2'></i></a>
+                            <div class="col-4">
+                                <a href="https://wa.me/6282133635122" target="_blank" class="infotxt"><i class="fa-brands fa-whatsapp"></i></a>
                             </div>
+                            <div class="col-4">
+                                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            </div>
+                            <div class="col-4">
+                                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                            </div>
+
+
                         </div>
                     </div>
                 </div>
@@ -261,22 +250,22 @@ $row_test = mysqli_fetch_assoc($result_test);
                 </div>
                 <div class="col-12 col-md-4 col-lg-2">
                     <div class="info mt-4">
-                        <h3>More</h3>
+                        <h3>Kerja Sama</h3>
                         <div class="footer-list mt-lg-3">
-                            <li><a class="nav-footer" href="#">Syarat & Ketentuan</a></li>
-                            <li><a class="nav-footer" href="#">Privasi</a></li>
-                            <li><a class="nav-footer" href="#">Iklan</a></li>
+                            <li><a class="nav-footer" href="#">Info Kolaborasi</a></li>
+                            <li><a class="nav-footer" href="#">Mahasiswa</a></li>
+                            <li><a class="nav-footer" href="#">Komunitas</a></li>
+                            <li><a class="nav-footer" href="#">Sekolah</a></li>
                         </div>
                     </div>
                 </div>
                 <div class="col-12 col-md-4 col-lg-2">
                     <div class="info mt-4">
-                        <h3>Media Sosial</h3>
+                        <h3>More</h3>
                         <div class="footer-list mt-lg-3">
-                            <li><a class="nav-footer" href="#"><img src="asset/image/icon/icons8-instagram-30.png" alt="Logo Instagram">
-                                    Instagram</a></li>
-                            <li><a class="nav-footer" href="#"><img src="asset/image/icon/icons8-facebook-30.png" alt="Logo Instagram"> Facebook</a></li>
-                            <li><a class="nav-footer" href="#"><img src="asset/image/icon/icons8-twitter-30.png" alt="Logo Instagram"> Twitter</a></li>
+                            <li><a class="nav-footer" href="#">Syarat & Ketentuan</a></li>
+                            <li><a class="nav-footer" href="#">Privasi</a></li>
+                            <li><a class="nav-footer" href="#">Iklan</a></li>
                         </div>
                     </div>
                 </div>
@@ -289,6 +278,48 @@ $row_test = mysqli_fetch_assoc($result_test);
         </div>
     </section>
     <!-- Footer -->
+    <script>
+        let DATA = null;
+        const form = document.querySelector('form');
+        const newsContainer = document.querySelector('#news-container');
+
+        async function getData() {
+            const fetchData = await fetch(
+                'https://newsapi.org/v2/top-headlines?country=id&category=health&apiKey=fab180adfd804228917c512c4599d0d4'
+            );
+            const response = await fetchData.json();
+
+            let count = 0;
+
+            for (const article of response.articles) {
+                if (count === 4) {
+                    break;
+                }
+
+                newsContainer.innerHTML += templateNews(article);
+                count++;
+            }
+
+            DATA = response;
+        }
+
+        function templateNews(data) {
+            return `
+            <div class="col-12 col-md-6 col-lg-3 mt-4" id="news-item">
+                <div class="card">
+                    <img src="${data.urlToImage}" alt="">
+                    <a href="${data.url}" class="mt-5">
+                        <h6>${data.title}</h6>
+                    </a>
+                    <p class="article-categories">${data.description}</p>
+                    <p class="article-time">${data.publishedAt} by ${data.author}</p>
+                </div>
+            </div>
+            `;
+        }
+
+        getData();
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
     </script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
