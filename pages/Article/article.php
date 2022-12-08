@@ -3,16 +3,6 @@
 include '../../koneksi.php';
 session_start();
 
-if (!isset($_SESSION['id'])) {
-
-    //Penggunaan javascript
-    echo "<script>var elm = document.getElementById('login');
-elm.style.display = 'none';</script>";
-
-    //Penggunaan tag style pada head
-    echo '<style>button {display:none;}</style>';
-}
-
 $query =
     "SELECT * from tb_dokter";
 
@@ -42,7 +32,7 @@ $row_test = mysqli_fetch_assoc($result_test);
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light py-4 bgcolor" data-aos="fade-down">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top py-4 bgcolor" data-aos="fade-down">
             <div class="container">
                 <a class="navbar-brand" href="#">Parent<span>Care</span></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -83,8 +73,8 @@ $row_test = mysqli_fetch_assoc($result_test);
 
             <form action="">
                 <div class="row mt-4">
-                    <div class="col-10"><input type="text" class="search" placeholder="Search for article" data-aos="fade-right" data-aos-once="true" data-aos-delay="200"></div>
-                    <div class="col-2"><button type="submit" class="btn btn-send" data-aos="fade-left" data-aos-once="true" data-aos-delay="200">Search</button></div>
+                    <div class="col-8"><input type="text" class="search" placeholder="Search for article" data-aos="fade-right" data-aos-once="true" data-aos-delay="200"></div>
+                    <div class="col-2"><button type="submit" class="btn btn-send search-btn" data-aos="fade-left" data-aos-once="true" data-aos-delay="200">Search</button></div>
                 </div>
             </form>
 
@@ -164,12 +154,6 @@ $row_test = mysqli_fetch_assoc($result_test);
         </div>
     </section>
     <!-- Footer -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
-    </script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
 
     <script>
         let DATA = null;
@@ -225,6 +209,13 @@ $row_test = mysqli_fetch_assoc($result_test);
         }
 
         getData();
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
     </script>
 </body>
 
