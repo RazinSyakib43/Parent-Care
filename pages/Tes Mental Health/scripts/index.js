@@ -1,5 +1,8 @@
 var i = 0;
-var count = 0;
+var countDepresi = 0;
+var countCemas = 0;
+var countStress = 0;
+
 
 generate(0);
 
