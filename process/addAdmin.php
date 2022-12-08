@@ -22,7 +22,7 @@
     else
     {
         $error = urldecode("Data tidak berhasil ditambahkan");
-        header("Location:customer.php?error=$error");
+    header("Location:../pages/Admin/addAkunAdmin.php?error=$error");
     }
 
     mysqli_close($conn);

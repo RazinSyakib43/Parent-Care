@@ -1,6 +1,6 @@
-<?php 
+<?php
 include '../../koneksi.php';
-session_start(); 
+session_start();
 
 $id = $_SESSION['id'];
 $query = "SELECT * FROM tb_admin INNER JOIN tb_user
@@ -8,15 +8,6 @@ ON tb_user.id = tb_admin.id ";
 
 $result = mysqli_query($conn, $query);
 $row = mysqli_fetch_assoc($result);
-
-$username = $row['username'];
-
-$query_user = "SELECT * FROM tb_customer INNER JOIN tb_user
-ON tb_user.id = tb_customer.id ";
-
-$result_user = mysqli_query($conn, $query_user);
-$row_user = mysqli_fetch_assoc($result_user);
-
 
 ?>
 
@@ -183,6 +174,20 @@ $row_user = mysqli_fetch_assoc($result_user);
 
                             <!-- General Form Elements -->
                             <form action="../../process/addAdmin.php" method="POST">
+                                <?php
+                                $tampilkan_isi = "select count(id) as jumlah from tb_admin;";
+                                $tampilkan_isi_sql = mysqli_query($conn, $tampilkan_isi);
+                                $no = 1;
+
+                                while ($isi = mysqli_fetch_array($tampilkan_isi_sql)) {
+                                    $jumlah = $isi['jumlah'];
+                                ?>
+
+                                <input type="hidden" name="id" value="A00<?php echo $no + $jumlah; ?>">
+
+                                <?php } ?>
+
+
                                 <div class="row mb-3">
                                     <label for="inputText" class="col-sm-2 col-form-label">Nama</label>
                                     <div class="col-sm-10">

@@ -1,6 +1,6 @@
-<?php 
+<?php
 include '../../koneksi.php';
-session_start(); 
+session_start();
 
 $id = $_SESSION['id'];
 
@@ -182,23 +182,23 @@ $row_user = mysqli_fetch_assoc($result_user);
                                 <tbody>
                                     <?php
                                     if ($row_admin > 0) {
-                                        foreach ($result_admin as $row_result) {
+                                        foreach ($result_admin as $row_resultAdmin) {
                                             $no = 1;
                                             $id = $row_admin['id'];
                                             echo '    
                                 <tr>
-                                        <td><img src="assets/img/' . $row_admin['foto'] . '" alt="Profile"></td>
-                                    <td>' . $row_admin['nama'] . '</td>
-                                    <td>' . $row_admin['email'] . '</td>
+                                        <td><img src="assets/img/' . $row_resultAdmin['foto'] . '" alt="Profile"></td>
+                                    <td>' . $row_resultAdmin['nama'] . '</td>
+                                    <td>' . $row_resultAdmin['email'] . '</td>
                                     <td> <button type="button" class="btn btn-outline-primary">Edit</button>
                                         <a class="btn btn-outline-danger"
-                                            href="../../process/deleteAdmin.php?id=' . $id . '">Delete</a>
+                                            href="../../process/deleteAdmin.php?id=' . $row_resultAdmin['id'] . '" onclick=”return confirm(‘Yakin Hapus?’)”>Delete</a>
 
                                     </td>
                                     </tr>';
-                                }
-                            } else {
-                            echo '<tr>
+                                        }
+                                    } else {
+                                        echo '<tr>
                                 <td>
                                     <div class="d-flex px-2 py-1">
 
@@ -207,9 +207,11 @@ $row_user = mysqli_fetch_assoc($result_user);
                                         </div>
                                     </div>
                                 </td>';
-                                }
-                                $no++;
-                                        ?>
+                                    }
+
+                                    if (isset($no)) {
+                                        $no++;
+                                    }                                         ?>
                                 </tbody>
                             </table>
                             <!-- End Default Table Example -->
@@ -231,21 +233,21 @@ $row_user = mysqli_fetch_assoc($result_user);
                                 </thead>
                                 <tbody>
                                     <?php
-                                if ($row_user > 0) {
-                                    foreach ($result_user as $row_result) {
-                                        $no = 1;
-                                    echo '
+                                    if ($row_user > 0) {
+                                        foreach ($result_user as $row_result) {
+                                            $no = 1;
+                                            echo '
                                     <tr>
-                                        <td><img width = "100px" src="../../asset/image/user/'.  $row_result['foto'] .'"
+                                        <td><img width = "100px" src="../../asset/image/user/' .  $row_result['foto'] . '"
                                     alt="Gambar Profile">
                                     </td>
-                                    <td>'. $row_result['nama'] .'</td>
-                                    <td>'. $row_result['email'] .'</td>
+                                    <td>' . $row_result['nama'] . '</td>
+                                    <td>' . $row_result['email'] . '</td>
                                     </tr>
                                     ';
-                                    }
+                                        }
                                     } else {
-                                    echo '<tr>
+                                        echo '<tr>
                                         <td>
                                             <div class="d-flex px-2 py-1">
 
@@ -254,9 +256,9 @@ $row_user = mysqli_fetch_assoc($result_user);
                                                 </div>
                                             </div>
                                         </td>';
-                                        }
+                                    }
                                     $no++;
-                                        ?>
+                                    ?>
                                 </tbody>
                             </table>
                             <!-- End Default Table Example -->

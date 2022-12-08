@@ -3,15 +3,14 @@
 include '../../koneksi.php';
 session_start();
 
-if (!isset($_SESSION['id'])){
+if (!isset($_SESSION['id'])) {
 
-//Penggunaan javascript
-echo "<script>var elm = document.getElementById('login');
+    //Penggunaan javascript
+    echo "<script>var elm = document.getElementById('login');
 elm.style.display = 'none';</script>";
 
-//Penggunaan tag style pada head
-echo '<style>button {display:none;}</style>';
-
+    //Penggunaan tag style pada head
+    echo '<style>button {display:none;}</style>';
 }
 
 $query =
@@ -79,7 +78,7 @@ $row_user = mysqli_fetch_assoc($result_user);
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
                                 <img width="40px" src="../../asset/image/user/<?php echo $row_user['foto'] ?>"
-                                    alt="Profile" class="rounded-circle">
+                                    alt="Profile">
 
                             </a>
                             <ul class="dropdown-menu">
@@ -143,19 +142,40 @@ $row_user = mysqli_fetch_assoc($result_user);
                 </div>
             </div>
             <div class="row mt-4">
+                <?php
+                if ($row > 0) {
+                    foreach ($result as $rowDokter) {
+                        $no = 1;
+                        $id = $row['id'];
+                        echo '
                 <div class="col-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-once="true" data-aos-delay="100">
                     <div class="card">
-                        <?php echo " <img src='../../asset/image/dokter/" . $row['foto'] . "' alt='Gambar Dokter'> " ?>
-                        <h5 class="tittle-ptoduct mt-3"><?php echo $row['nama'] ?></h5>
+
+                        <img src="../../asset/image/dokter/' . $rowDokter['foto'] . '" alt="Gambar Dokter">
+                        <h5 class="tittle-ptoduct mt-3">' . $rowDokter['nama'] . '</h5>
                         <div class="tittle-card mt-1">
-                            <p class="price m-0"><img
-                                    src='../../asset/image/icon/icons8-stetoscope-icon-32.png'><?php echo "  " . $row['keahlian'] ?>
-                            </p>
+                            <p class="price m-0"><img src="../../asset/image/icon/icons8-stetoscope-icon-32.png">' .
+                            $rowDokter['keahlian'] . ' </p>
                         </div>
                     </div>
                 </div>
+                    ';
+                    }
+                } else {
+                    echo '<div class="row mt-4">
+
+                            <div class="tittle-card mt-1">
+                                <p class="price m-0">Tidak ada data yang ditemukan
+                                </p>
+                            </div>';
+                }
+
+                if (isset($no)) {
+                    $no++;
+                } ?>
+
             </div>
-        </div>
+
     </section>
     <!-- Home -->
 
@@ -204,22 +224,36 @@ $row_user = mysqli_fetch_assoc($result_user);
                 </div>
             </div>
             <div class="row">
+                <?php
+                if ($row_test > 0) {
+                    foreach ($result_test as $rowTest) {
+                        $no = 1;
+                        $id = $row['id'];
+                        echo '
                 <div class="col-12 col-md-6 col-lg-4 mt-4" data-aos="fade-up" data-aos-once="true" data-aos-delay="100">
                     <div class="card">
                         <div class="testi">
-                            <p><?php echo"<q>". $row_test['deskripsi'] ."</q>"?></p>
-                            <h6 class="article-categories"><?php echo $row_test['username'] ?></h6>
-                            <p class="article-time"><?php echo $row_test['tgl'] ?></p>
-                        </div>
-                    </div>
-                </div>
+                            <p>"' . $rowTest['deskripsi'] . '" </p>
+                <h6 class="article-categories">' . $rowTest['username'] . '</h6>
+                <p class="article-time">' . $row_test['tgl'] . '</p>
+
             </div>
-            <div class="row">
-                <div class="col-12 see-more" data-aos="fade-up" data-aos-once="true" data-aos-delay="100">
-                    <div class="btn-detail mt-5 text-center">
-                        <a href="#"><button type="button" class="btn btn-second">Read More</button></a>
-                    </div>
-                </div>
+        </div>
+        </div>';
+                    }
+                } else {
+                    echo '<div class="row mt-4">
+
+            <div class="tittle-card mt-1">
+                <p class="price m-0">Tidak ada data yang ditemukan
+                </p>
+            </div>';
+                }
+
+                if (isset($no)) {
+                    $no++;
+                } ?>
+
             </div>
         </div>
     </section>

@@ -4,8 +4,9 @@
     $id = $_GET['id'];
 
     $query = "DELETE from tb_user WHERE id = '$id'";
+$query2 = "DELETE from tb_admin WHERE id = '$id'";
 
-    if (mysqli_query($conn, $query))
+if (mysqli_query($conn, $query) && mysqli_query($conn, $query2))
     {
         header("Location:../pages/Admin/account.php");
     }

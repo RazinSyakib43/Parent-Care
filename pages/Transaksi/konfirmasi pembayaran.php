@@ -1,6 +1,6 @@
-<?php 
+<?php
 include '../../koneksi.php';
-session_start(); 
+session_start();
 
 $id = $_SESSION['id'];
 $query = "SELECT * FROM tb_customer WHERE id = '$id'";
@@ -19,8 +19,7 @@ if (mysqli_num_rows($result) == 1) {
     $row = mysqli_fetch_assoc($result);
 }
 
-if(!$_SESSION['email'] && !$_SESSION['password'] && $_SESSION['level'] != "Admin")
-{
+if (!$_SESSION['email'] && !$_SESSION['password'] && $_SESSION['level'] != "Admin") {
     echo "
 		<script type='text/javascript'>
 		alert('Anda harus login terlebih dahulu!')
@@ -57,7 +56,7 @@ if(!$_SESSION['email'] && !$_SESSION['password'] && $_SESSION['level'] != "Admin
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <div class="navbar-nav ms-auto">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="../User/dashboard.php">Home</a>
                         <a class="nav-link" href="#">Artikel</a>
                         <a class="nav-link" href="#">FAQ</a>
                         <li class="nav-item dropdown">
@@ -80,7 +79,7 @@ if(!$_SESSION['email'] && !$_SESSION['password'] && $_SESSION['level'] != "Admin
                             </a>
                             <ul class="dropdown-menu">
                                 <li>
-                                    <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <a class="dropdown-item d-flex align-items-center" href="../User/edit-profile.php">
                                         <i class="bi bi-gear"></i>
                                         <span>Account Settings</span>
                                     </a>
@@ -147,20 +146,28 @@ if(!$_SESSION['email'] && !$_SESSION['password'] && $_SESSION['level'] != "Admin
                     </div>
                 </div>
             </div>
-            <div class="row mt-4">
-                <div class="col-12">
-                    <h1>Konfirmasi Pembayaran</h1>
-                    <p>Silahkan berikan bukti pembayaran pada kolom di bawah ini.</p>
-                    <div class="inputFile col-5 d-flex align-items-center">
-                        <input type="file" class="uploadBuktiPembayaran">
-                    </div>
-                </div>
-                <div class="col-sm-12 col-lg-5 mt-2">
+            <form action="../../process/processConfirm.php" method="post" enctype="multipart/form-data">
+                <div class=" row mt-4">
                     <div class="col-12">
-                        <div class="col-3"> <button type="submit" class="btn btn-send">Finish</button></div>
+                        <h1>Konfirmasi Pembayaran</h1>
+                        <p>Silahkan berikan bukti pembayaran pada kolom di bawah ini.</p>
+                        <div class="inputFile col-5 d-flex align-items-center">
+                            <input type="file" class="uploadBuktiPembayaran" name="file">
+                        </div>
                     </div>
-                </div>
-            </div>
+                    <div class="col-sm-12 col-lg-5 mt-2">
+                        <div class="col-12">
+                            <div class="col-3"> <a href="pembayaran.php" class="btn btn-send">Back</a></div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-lg-5 mt-2">
+                        <div class="col-12">
+                            <div class="col-3"> <button type="submit" name="upload" class="btn btn-send">Finish</button>
+                            </div>
+                        </div>
+                    </div>
+            </form>
+        </div>
     </section>
     <!-- Article -->
 

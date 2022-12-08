@@ -1,56 +1,55 @@
-*{
+* {
     box-sizing: border-box !important;
     color: #000;
     font-family: "Poppins", sans-serif;
 }
 
-.navbar{
+.navbar {
     background-color: #D0EBFF;
     height: 90px;
 }
 
-.navbar-brand{
+.navbar-brand {
     font-weight: 500;
     font-size: 26px;
 }
 
-.navbar-brand span{
+.navbar-brand span {
     color: #1971C2;
 }
 
-.nav-link{
+.nav-link {
     font-size: 16px;
     margin-right: 30px;
     color: #000 !important;
 }
 
-.nav-login{
+.nav-login {
     color: #fff;
 }
 
-.heading-home{
+.heading-home {
     color: #23596D;
     font-weight: 700;
     font-size: 48px;
 }
 
-.subheading-home{
+.subheading-home {
     font-weight: 300;
     color: #000;
     font-size: 20px;
 }
 
-.home{
+.home {
     background-color: #D0EBFF;
     padding-top: 160px;
 }
 
-
-.btn-home .button{
+.btn-home .button {
     padding: 10px 25px;
 }
 
-.btn-home a{
+.btn-home a {
     background-color: #1971C2;
     text-decoration: none;
     font-weight: 700;
@@ -59,7 +58,7 @@
     transition: 0.3s;
 }
 
-.btn-home a:hover{
+.btn-home a:hover {
     background-color: #FFFFFF;
     border: 0.01px solid #1971C2;
     color: #1971C2;
@@ -67,23 +66,23 @@
     transition: 0.3s;
 }
 
-.home-hero{
+.home-hero {
     padding-left: 60px;
     padding-bottom: 70px;
 }
 
-.section-heading{
+.section-heading {
     color: #062C30;
     font-weight: 700;
     text-align: center;
 }
 
-.subheading{
+.subheading {
     color: #062C30;
     text-align: center;
 }
 
-.card{
+.card {
     padding: 15px 15px 30px;
     border-radius: 20px;
     border: none;
@@ -91,45 +90,47 @@
     transition: 0.3s all;
 }
 
-.psychologists .card h5{
+.psychologists .card h5 {
     font-weight: 600;
     font-size: 24px;
     color: #2D3134;
     text-align: center;
 }
 
-.psychologists .card p{
+.psychologists .card p {
     font-weight: 500;
     font-size: 16px;
     color: #2D3134;
     text-align: center;
 }
 
+
 /* Article */
-.article{
+
+.article {
     padding-top: 50px;
     padding-bottom: 30px;
 }
 
-.article .article-categories{ 
+.article .article-categories {
     margin-top: 10px;
     font-size: 14px;
     color: #413F42;
     font-weight: 500;
 }
 
-.article .article-time{ 
+.article .article-time {
     margin-top: 10px;
     font-size: 10px;
     color: #606a70;
     font-weight: 500;
 }
 
-.testi{
+.testi {
     padding: 20px;
 }
 
-.article img{
+.article img {
     margin-top: 20px;
     max-width: 100%;
     max-height: 100%;
@@ -137,18 +138,18 @@
     object-fit: fill;
 }
 
-.article a{
+.article a {
     text-decoration: none;
 }
 
-.article h6{
+.article h6 {
     margin-top: -10px;
     font-size: 18px;
     color: #0F0E0E;
     font-weight: 600;
 }
 
-.see-more .btn-detail .btn-second{
+.see-more .btn-detail .btn-second {
     background-color: #1971C2;
     color: #F6FBF4;
     border: 2px solid #1971C2;
@@ -159,7 +160,7 @@
     transition: 0.3s all;
 }
 
-.see-more .btn-detail .btn-second:hover{
+.see-more .btn-detail .btn-second:hover {
     background-color: #F6FBF4;
     color: #1971C2;
     border: 2px solid #1971C2;
@@ -170,53 +171,52 @@
     transition: 0.3s all;
 }
 
+
 /* Footer */
 
-.footer{
+.footer {
     background-color: #1971C2;
     padding-top: 20px;
 }
-.footer .logo-footer a{
+
+.footer .logo-footer a {
     color: #F6FBF4;
 }
 
-.footer .logo span{
+.footer .logo span {
     color: #E2D784;
 }
 
-.footer .info a{
+.footer .info a {
     color: #F6FBF4;
     text-decoration: none;
     font-size: 16px;
 }
 
-.footer .info li{
+.footer .info li {
     text-decoration: none;
     display: block;
     margin: 10px 0;
 }
 
-.footer .info h3{
+.footer .info h3 {
     color: #F6FBF4;
     font-weight: 700;
     font-size: 18px;
 }
 
-.sosmed{
+.sosmed {
     display: flex;
     justify-content: space-between;
 }
 
-.copyright{
+.copyright {
     font-size: 16px;
     color: #F6FBF4;
     text-align: center;
 }
 
-
-
-
-.btn-detail .btn-add{
+.btn-detail .btn-add {
     background-color: #1971C2;
     box-shadow: 5px 4px 50px rgba(0, 0, 0, 0.275);
     color: #F6FBF4;
@@ -228,7 +228,7 @@
     transition: 0.3s all;
 }
 
-.search{
+.search {
     border-radius: 10px;
     box-shadow: 5px 4px 50px rgba(0, 0, 0, 0.275);
     font-size: 16px;
@@ -240,13 +240,13 @@
     border-radius: 5px;
 }
 
-.search:focus{
+.search:focus {
     box-shadow: 5px 4px 50px rgba(0, 0, 0, 0.275);
     border: 2px solid #fff;
     transition: 0.3s all;
-} 
+}
 
-.question-list .card{
+.question-list .card {
     padding: 30px 30px 20px 30px;
     border-radius: 10px;
     border: none;
@@ -254,27 +254,27 @@
     transition: 0.3s all;
 }
 
-.question-list .card h6{
+.question-list .card h6 {
     font-size: 24px;
     font-weight: 500;
 }
 
-.question-list .card .question-description{
+.question-list .card .question-description {
     font-size: 16px;
     font-weight: 300;
 }
 
-.question-list .card .question-time{
+.question-list .card .question-time {
     font-size: 16px;
     font-weight: 300;
 }
 
-.question-list .card .info-forum{
+.question-list .card .info-forum {
     margin-top: 58px;
     font-size: 14px;
 }
 
-.add-topic-title{
+.add-topic-title {
     border-radius: 10px;
     font-size: 16px;
     border: 2px solid #F5F6F8;
@@ -286,19 +286,19 @@
     border-radius: 5px;
 }
 
-.add-topic-title:focus{
+.add-topic-title:focus {
     box-shadow: 5px 4px 50px rgba(0, 0, 0, 0.275);
     border: 2px solid #F5F6F8;
     transition: 0.3s all;
-} 
+}
 
-.form-label{
+.form-label {
     font-size: 16px;
     font-weight: 400;
     color: #152C5B;
 }
 
-.form-control{
+.form-control {
     border-radius: 10px;
     font-size: 16px;
     border: 2px solid #F5F6F8;
@@ -310,7 +310,7 @@
     border-radius: 5px;
 }
 
-.btn-send{
+.btn-send {
     width: 182px;
     height: 54px;
     background-color: #1C4755;

@@ -1,9 +1,9 @@
-<?php 
+<?php
 include '../../koneksi.php';
-session_start(); 
+session_start();
 
 $id = $_SESSION['id'];
-$query = "SELECT * FROM tb_customer WHERE id = '$id'";
+$query = "SELECT * FROM tb_jadwal GROUP BY waktu";
 
 $result = mysqli_query($conn, $query);
 $hasil = mysqli_num_rows($result);
@@ -14,8 +14,7 @@ if (mysqli_num_rows($result) == 1) {
     $row = mysqli_fetch_assoc($result);
 }
 
-if(!$_SESSION['email'] && !$_SESSION['password'] && $_SESSION['level'] != "Admin")
-{
+if (!$_SESSION['email'] && !$_SESSION['password'] && $_SESSION['level'] != "Admin") {
     echo "
 		<script type='text/javascript'>
 		alert('Anda harus login terlebih dahulu!')
@@ -51,7 +50,7 @@ if(!$_SESSION['email'] && !$_SESSION['password'] && $_SESSION['level'] != "Admin
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <div class="navbar-nav ms-auto">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="../User/dashboard.php">Home</a>
                         <a class="nav-link" href="#">Artikel</a>
                         <a class="nav-link" href="#">FAQ</a>
                         <li class="nav-item dropdown">
@@ -74,7 +73,7 @@ if(!$_SESSION['email'] && !$_SESSION['password'] && $_SESSION['level'] != "Admin
                             </a>
                             <ul class="dropdown-menu">
                                 <li>
-                                    <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <a class="dropdown-item d-flex align-items-center" href="../User/edit-profile.php">
                                         <i class="bi bi-gear"></i>
                                         <span>Account Settings</span>
                                     </a>
@@ -141,29 +140,50 @@ if(!$_SESSION['email'] && !$_SESSION['password'] && $_SESSION['level'] != "Admin
                     </div>
                 </div>
             </div>
-            <div class="row mt-4">
-                <div class="col-6">
-                    <div class="col-12 mb-3">
-                        <label for="" class="form-label">Choose Date</label>
-                        <input type="date" class="add-topic-title">
+            <form action="../../process/processDate.php" method="post">
+                <div class="row mt-4">
+                    <div class="col-6">
+                        <div class="col-12 mb-3">
+                            <label for="" class="form-label">Choose Date</label>
+                            <input type="date" class="add-topic-title" name="Date">
+                        </div>
                     </div>
-                </div>
-                <div class="col-6">
-                    <div class="col-12 mb-3">
-                        <label for="" class="form-label">Choose Time</label>
-                        <select class="form-select" aria-label="Default select example">
-                            <option selected>Open this select menu</option>
-                            <option value="1">09:00 AM</option>
-                            <option value="2">12:30 PM</option>
-                            <option value="3">04:00 PM</option>
-                            <option value="4">07:00 PM</option>
-                        </select>
+                    <div class="col-6">
+                        <div class="col-12 mb-3">
+                            <label for="" class="form-label">Choose Time</label>
+                            <select class="form-select" aria-label="Default select example" name="time">
+                                <option selected>Open this select menu</option>
+                                <?php
+                                    if ($hasil > 0) {
+                                        foreach ($result as $waktu) {
+                                            $no = 1;
+                                            $id = $row['id'];
+                                            echo '
+                            <option value=' . $waktu['waktu'] . '>' . $waktu['waktu'] . '</option>';
+                                        }
+                                    } ?>
+                            </select>
+                        </div>
+                        <!-- <div class="col-6">
+                            <div class="col-12 mb-3">
+                                <button type="submit" name="Submit" class="btn btn-send">
+                                    Search</button>
+
+                            </div>
+                        </div> -->
                     </div>
-                </div>
-                <div class="col-12">
-                    <div class="col-3"> <a href="konsultasi.php" class="btn btn-send">Next</a></div>
+            </form>
+            <div class="col-6">
+                <div class="col-12 mb-3">
+                    <div class="col-3"> <a href="../Transaksi/isi-biodata.php" class="btn btn-send">Back</a></div>
                 </div>
             </div>
+            <div class="col-6">
+                <div class="col-12 mb-3">
+                    <div class="col-3"> <button type="submit" name="submit" class="btn btn-send">Next</button></div>
+                </div>
+            </div>
+        </div>
         </div>
     </section>
     <!-- Article -->

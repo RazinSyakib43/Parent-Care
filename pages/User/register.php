@@ -1,7 +1,5 @@
 <?php
-//menyertakan file program koneksi.php pada register
-require('../koneksi.php');
-
+require('../../koneksi.php');
 ?>
 
 <!doctype html>
@@ -13,7 +11,7 @@ require('../koneksi.php');
     <title>Register ParentCare</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../../styles/style.css">
 </head>
 
 <body>
@@ -27,15 +25,15 @@ require('../koneksi.php');
             <div class="row mt-4 question-list">
                 <div class="col-1"></div>
                 <div class="col-10">
-                    <form role="form" method="POST" action="../process/addUser.php">
+                    <form role="form" method="POST" action="../../process/addUser.php">
                         <?php
-                    $tampilkan_isi = "select count(id) as jumlah from tb_customer;";
-                    $tampilkan_isi_sql = mysqli_query($conn, $tampilkan_isi);
-                    $no = 1;
+                        $tampilkan_isi = "select count(id) as jumlah from tb_customer;";
+                        $tampilkan_isi_sql = mysqli_query($conn, $tampilkan_isi);
+                        $no = 1;
 
-                    while ($isi = mysqli_fetch_array($tampilkan_isi_sql)) {
-                      $jumlah = $isi['jumlah'];
-                    ?>
+                        while ($isi = mysqli_fetch_array($tampilkan_isi_sql)) {
+                            $jumlah = $isi['jumlah'];
+                        ?>
 
                         <input type="hidden" name="id" value="C00<?php echo $no + $jumlah; ?>">
 

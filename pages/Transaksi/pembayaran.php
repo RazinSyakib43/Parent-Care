@@ -1,6 +1,6 @@
-<?php 
+<?php
 include '../../koneksi.php';
-session_start(); 
+session_start();
 
 $id = $_SESSION['id'];
 $query = "SELECT * FROM tb_customer WHERE id = '$id'";
@@ -10,12 +10,16 @@ $hasil = mysqli_fetch_assoc($result);
 
 $row = '';
 
+$query_rek = "SELECT * FROM tb_rekening";
+
+$result_rek = mysqli_query($conn, $query_rek);
+$hasil_rek = mysqli_fetch_assoc($result_rek);
+
 if (mysqli_num_rows($result) == 1) {
     $row = mysqli_fetch_assoc($result);
 }
 
-if(!$_SESSION['email'] && !$_SESSION['password'] && $_SESSION['level'] != "Admin")
-{
+if (!$_SESSION['email'] && !$_SESSION['password'] && $_SESSION['level'] != "Admin") {
     echo "
 		<script type='text/javascript'>
 		alert('Anda harus login terlebih dahulu!')
@@ -50,7 +54,7 @@ if(!$_SESSION['email'] && !$_SESSION['password'] && $_SESSION['level'] != "Admin
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <div class="navbar-nav ms-auto">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="../User/dashboard.php">Home</a>
                         <a class="nav-link" href="#">Artikel</a>
                         <a class="nav-link" href="#">FAQ</a>
                         <li class="nav-item dropdown">
@@ -73,7 +77,7 @@ if(!$_SESSION['email'] && !$_SESSION['password'] && $_SESSION['level'] != "Admin
                             </a>
                             <ul class="dropdown-menu">
                                 <li>
-                                    <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <a class="dropdown-item d-flex align-items-center" href="../User/edit-profile.php">
                                         <i class="bi bi-gear"></i>
                                         <span>Account Settings</span>
                                     </a>
@@ -138,66 +142,44 @@ if(!$_SESSION['email'] && !$_SESSION['password'] && $_SESSION['level'] != "Admin
                     </div>
                 </div>
             </div>
-            <div class="row mt-4">
-                <div class="col-sm-12 col-lg-5">
-                    <div class="col-12 mb-3">
-                        <div class="paidCard">
-                            <div class="col-1"> <input type="radio" name="BCA" id="paidCard1"></div>
-                            <div class="col-4"> <img src="asset/image/Pembayaran/BCA.png" alt=""></div>
-                            <div class="col-7 infoRekening">
-                                <p class="noRekening">8735089584</p>
-                                <p class="anRekening">ParentCare</p>
+            <form action="../../process/processPembayaran.php" method="post">
+                <div class="row mt-4">
+                    <div class="col-sm-12 col-lg-5">
+                        <?php
+                            foreach ($result_rek as $row_rek) {
+                                $no = 1;
+                            ?>
+
+                        <div class="col-12 mb-3">
+                            <div class="paidCard">
+                                <div class="col-1"> <input type="radio" name="rek"
+                                        value="<?php echo $row_rek['no_rek'] ?>" id="paidCard1"></div>
+                                <div class="col-7 infoRekening">
+                                    <p class="noRekening"><?php echo $row_rek['bank'] ?></p>
+                                    <p class="noRekening"><?php echo $row_rek['no_rek'] ?></p>
+                                    <p class="anRekening"><?php echo $row_rek['atas_nama'] ?></p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-12 mb-3">
-                        <div class="paidCard">
-                            <div class="col-1"> <input type="radio" name="BCA" id="paidCard1"></div>
-                            <div class="col-4"> <img src="asset/image/Pembayaran/BCA.png" alt=""></div>
-                            <div class="col-7 infoRekening">
-                                <p class="noRekening">8735089584</p>
-                                <p class="anRekening">ParentCare</p>
+                        <?php } ?>
+                        <div class="col-sm-12 col-lg-5 mt-2">
+                            <div class="col-12">
+                                <div class="col-3"> <a href="pilih-tanggal.php" class="btn btn-send">Back</a></div>
+
                             </div>
                         </div>
-                    </div>
-                    <div class="col-12 mb-3">
-                        <div class="paidCard">
-                            <div class="col-1"> <input type="radio" name="BCA" id="paidCard1"></div>
-                            <div class="col-4"> <img src="asset/image/Pembayaran/BCA.png" alt=""></div>
-                            <div class="col-7 infoRekening">
-                                <p class="noRekening">8735089584</p>
-                                <p class="anRekening">ParentCare</p>
+                        <div class="col-sm-12 col-lg-5 mt-2">
+                            <div class="col-12">
+                                <div class="col-3"> <button type="submit" class="btn btn-send">Next</button>
+                                </div>
+
                             </div>
                         </div>
-                    </div>
-                    <div class="col-12 mb-3">
-                        <div class="paidCard">
-                            <div class="col-1"> <input type="radio" name="BCA" id="paidCard1"></div>
-                            <div class="col-4"> <img src="asset/image/Pembayaran/BCA.png" alt=""></div>
-                            <div class="col-7 infoRekening">
-                                <p class="noRekening">8735089584</p>
-                                <p class="anRekening">ParentCare</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12">
-                        <div class="col-3"> <a href="konfirmasi pembayaran.php" class="btn btn-send">Next</a></div>
-                    </div>
-                </div>
-                <div class="col-lg-2"></div>
-                <div class="col-sm-12 col-lg-5">
-                    <div class="card">
-                        <div class="card">
-                            <h1 class="titlePaketPembayaran">Basic Konsultasi</h1>
-                            <p class="hargaPaketPembayaran">Rp 150.000</p>
-                            <hr>
-                            <p class="article-time">1x konsul bersama dokter</p>
-                            <p class="article-time">1x konsul bersama dokter</p>
-                            <p class="article-time">1x konsul bersama dokter</p>
+                        <div class="col-12">
                         </div>
                     </div>
                 </div>
-            </div>
+            </form>
     </section>
     <!-- Article -->
     <!-- Footer -->

@@ -1,6 +1,6 @@
-<?php 
+<?php
 include '../../koneksi.php';
-session_start(); 
+session_start();
 
 $id = $_SESSION['id'];
 $query = "SELECT * FROM tb_customer WHERE id = '$id'";
@@ -19,8 +19,7 @@ if (mysqli_num_rows($result) == 1) {
     $row = mysqli_fetch_assoc($result);
 }
 
-if(!$_SESSION['email'] && !$_SESSION['password'] && $_SESSION['level'] != "Admin")
-{
+if (!$_SESSION['email'] && !$_SESSION['password'] && $_SESSION['level'] != "Admin") {
     echo "
 		<script type='text/javascript'>
 		alert('Anda harus login terlebih dahulu!')
@@ -36,7 +35,7 @@ if(!$_SESSION['email'] && !$_SESSION['password'] && $_SESSION['level'] != "Admin
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>ParentCare</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 
@@ -57,7 +56,7 @@ if(!$_SESSION['email'] && !$_SESSION['password'] && $_SESSION['level'] != "Admin
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <div class="navbar-nav ms-auto">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="../User/dashboard.php">Home</a>
                         <a class="nav-link" href="#">Artikel</a>
                         <a class="nav-link" href="#">FAQ</a>
                         <li class="nav-item dropdown">
@@ -80,7 +79,7 @@ if(!$_SESSION['email'] && !$_SESSION['password'] && $_SESSION['level'] != "Admin
                             </a>
                             <ul class="dropdown-menu">
                                 <li>
-                                    <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <a class="dropdown-item d-flex align-items-center" href="../User/edit-profile.php">
                                         <i class="bi bi-gear"></i>
                                         <span>Account Settings</span>
                                     </a>
@@ -112,34 +111,48 @@ if(!$_SESSION['email'] && !$_SESSION['password'] && $_SESSION['level'] != "Admin
                     </p>
                 </div>
             </div>
-            <?php
-                foreach ($result_paket as $row_result) {
-        $no = 1;
-                ?>
-            <div class="row">
+            <form action="../../process/processKonsultasi.php" method="post">
+                <div class="row">
+                    <?php
+                        foreach ($result_paket as $row_result) {
+                            $no = 1;
+                        ?>
+                    <div class="col-12 col-md-6 col-lg-4 mt-4" data-aos="fade-up" data-aos-once="true"
+                        data-aos-delay="100">
 
-                <div class="col-12 col-md-6 col-lg-4 mt-4" data-aos="fade-up" data-aos-once="true" data-aos-delay="100">
-                    <div class="card">
-                        <a href="#">
-                            <h6><?php echo $row_result['paket'] ?></h6>
-                        </a>
-                        <p class="article-categories"><?php echo 'Rp.'.  $row_result['harga'] ?></p>
-                        <hr>
-                        <p class="article-time">1x konsul bersama dokter ahli via chat</p>
-                        <p class="article-time"></p>
-                        <p class="article-time"></p>
-                        <div class="col-12 see-more" data-aos="fade-up" data-aos-once="true" data-aos-delay="100">
-                            <div class="btn-detail mt-5 text-center">
-                                <a href="pembayaran.php"><button type="button"
-                                        class="btn btn-second">Choose</button></a>
+                        <div class="card">
+                            <a href="#">
+                                <h6><input type="hidden" name="paket"
+                                        value="<?php echo $row_result['paket'] ?>"><?php echo 'Rp.' .  $row_result['paket'] ?>
+                                </h6>
+                            </a>
+                            <input type="hidden" class="article-categories" name="harga"
+                                value="<?php echo  $row_result['harga'] ?>"><?php echo 'Rp.' .  $row_result['harga'] ?>
+                            </p>
+                            <hr>
+                            <p class="article-time"></p>
+                            <p class="article-time"></p>
+                            <p class="article-time"></p>
+                            <div class="col-12 see-more" data-aos="fade-up" data-aos-once="true" data-aos-delay="100">
+                                <div class="btn-detail mt-5 text-center">
+                                    <button type="submit" name="submit" class="btn btn-second">Choose</button></a>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
+                    </div>
+                    <?php
+                            $no++;
+                        } ?>
                 </div>
-                <?php 
-                $no++;} ?>
-            </div>
+                <div class="col-6">
+                    <div class="col-12 mb-3">
+                        <div class="col-3"></div>
+                        <div class="col-3"> <a href="pilih-tanggal.php" class="btn btn-send">Back</a></div>
+                    </div>
+                </div>
+
+            </form>
         </div>
     </section>
     <!-- Article -->
@@ -227,6 +240,6 @@ if(!$_SESSION['email'] && !$_SESSION['password'] && $_SESSION['level'] != "Admin
     AOS.init();
     </script>
 </body>
-<?php }?>
+<?php } ?>
 
 </html>

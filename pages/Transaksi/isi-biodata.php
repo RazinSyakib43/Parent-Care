@@ -1,6 +1,6 @@
-<?php 
+<?php
 include '../../koneksi.php';
-session_start(); 
+session_start();
 
 $id = $_SESSION['id'];
 $query = "SELECT * FROM tb_customer WHERE id = '$id'";
@@ -13,8 +13,7 @@ if (mysqli_num_rows($result) == 1) {
     $row = mysqli_fetch_assoc($result);
 }
 
-if(!$_SESSION['email'] && !$_SESSION['password'] && $_SESSION['level'] != "Admin")
-{
+if (!$_SESSION['email'] && !$_SESSION['password'] && $_SESSION['level'] != "Admin") {
     echo "
 		<script type='text/javascript'>
 		alert('Anda harus login terlebih dahulu!')
@@ -49,7 +48,7 @@ if(!$_SESSION['email'] && !$_SESSION['password'] && $_SESSION['level'] != "Admin
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <div class="navbar-nav ms-auto">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="../User/dashboard.php">Home</a>
                         <a class="nav-link" href="#">Artikel</a>
                         <a class="nav-link" href="#">FAQ</a>
                         <li class="nav-item dropdown">
@@ -72,7 +71,7 @@ if(!$_SESSION['email'] && !$_SESSION['password'] && $_SESSION['level'] != "Admin
                             </a>
                             <ul class="dropdown-menu">
                                 <li>
-                                    <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <a class="dropdown-item d-flex align-items-center" href="../User/edit-profile.php">
                                         <i class="bi bi-gear"></i>
                                         <span>Account Settings</span>
                                     </a>
@@ -144,83 +143,93 @@ if(!$_SESSION['email'] && !$_SESSION['password'] && $_SESSION['level'] != "Admin
             <a href="#">
                 <h1>Tentang Saya</h1>
             </a>
-            <div class="row mt-4">
-                <div class="col-6">
-                    <div class="col-12 mb-3">
-                        <label for="" class="form-label">Your Name</label>
-                        <input type="text" class="add-topic-title" value="<?php echo $row['nama'] ?>">
-                    </div>
-                    <div class="col-12 mb-3">
-                        <label for="" class="form-label">Gender</label>
-                        <div class="genderRadio d-flex">
-
-                            <?php  
-                                     if ($row['gender']=='Pria' || $row['gender']=='pria'){
-                                        ?>
-                            <div class="form-checks me-4">
-                                <div class="cardGender">
-
-                                    <input class="form-check-inputs" type="radio" name="flexRadioDefault"
-                                        id="flexRadioDefault1" checked>
-                                    <label class="form-check-label" for="flexRadioDefault1">
-                                        Male
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="form-checks me-4">
-                                <div class="cardGender">
-                                    <input class="form-check-inputs" type="radio" name="flexRadioDefault"
-                                        id="flexRadioDefault2">
-                                    <label class="form-check-label" for="flexRadioDefault2">
-                                        Female
-                                    </label>
-                                </div>
-                            </div>
-
-                            <?php } else{ ?>
-                            <div class="form-checks me-4">
-                                <div class="cardGender">
-
-                                    <input class="form-check-inputs" type="radio" name="flexRadioDefault"
-                                        id="flexRadioDefault1" checked>
-                                    <label class="form-check-label" for="flexRadioDefault1">
-                                        Male
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="form-checks me-4">
-                                <div class="cardGender">
-                                    <input class="form-check-inputs" type="radio" name="flexRadioDefault"
-                                        id="flexRadioDefault2">
-                                    <label class="form-check-label" for="flexRadioDefault2">
-                                        Female
-                                    </label>
-                                </div>
-                            </div>
-                            <?php
-                            }
-                            ?>
+            <form action="../../process/processBiodata.php" method="post">
+                <div class="row mt-4">
+                    <div class="col-6">
+                        <div class="col-12 mb-3">
+                            <label for="" class="form-label">Your Name</label>
+                            <input type="text" class="add-topic-title" value="<?php echo $row['nama'] ?>">
                         </div>
+                        <div class="col-12 mb-3">
+                            <label for="" class="form-label">Gender</label>
+                            <div class="genderRadio d-flex">
 
-                    </div>
-                </div>
-                <div class="col-6">
-                    <div class="col-12 mb-3">
-                        <label for="" class="form-label">Phone Number</label>
-                        <input type="number" class="add-topic-title" value="<?php echo $row['tlp'] ?>">
-                    </div>
-                    <div class="col-12 mb-3">
-                        <label for="" class="form-label">Alamat</label>
-                        <textarea class="form-control" style="height: 100px"
-                            name="inputAddress"><?php echo $row['alamat'] ?></textarea>
-                    </div>
-                </div>
-                <div class="col-12">
-                    <div class="col-3"> <a href="pilih-tanggal.php" class="btn btn-send">Next</a></div>
-                </div>
+                                <?php
+                                    if ($row['gender'] == 'Pria' || $row['gender'] == 'pria') {
+                                    ?>
+                                <div class="form-checks me-4">
+                                    <div class="cardGender">
 
-            </div>
+                                        <input class="form-check-inputs" type="radio" name="flexRadioDefault"
+                                            id="flexRadioDefault1" checked>
+                                        <label class="form-check-label" for="flexRadioDefault1">
+                                            Male
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="form-checks me-4">
+                                    <div class="cardGender">
+                                        <input class="form-check-inputs" type="radio" name="flexRadioDefault"
+                                            id="flexRadioDefault2">
+                                        <label class="form-check-label" for="flexRadioDefault2">
+                                            Female
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <?php } else { ?>
+                                <div class="form-checks me-4">
+                                    <div class="cardGender">
+
+                                        <input class="form-check-inputs" type="radio" name="flexRadioDefault"
+                                            id="flexRadioDefault1" checked>
+                                        <label class="form-check-label" for="flexRadioDefault1">
+                                            Male
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="form-checks me-4">
+                                    <div class="cardGender">
+                                        <input class="form-check-inputs" type="radio" name="flexRadioDefault"
+                                            id="flexRadioDefault2">
+                                        <label class="form-check-label" for="flexRadioDefault2">
+                                            Female
+                                        </label>
+                                    </div>
+                                </div>
+                                <?php
+                                    }
+                                    ?>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="col-12 mb-3">
+                            <label for="" class="form-label">Phone Number</label>
+                            <input type="number" class="add-topic-title" value="<?php echo $row['tlp'] ?>">
+                        </div>
+                        <div class="col-12 mb-3">
+                            <label for="" class="form-label">Alamat</label>
+                            <textarea class="form-control" style="height: 100px"
+                                name="inputAddress"><?php echo $row['alamat'] ?></textarea>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="col-12 mb-3">
+                            <div class="col-3"> <a href="../User/dashboard.php" class="btn btn-send">Back</a></div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="col-12 mb-3">
+                            <div class="col-3"> <button type="submit" name="submit" class="btn btn-send">Next</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
         </div>
+        </form>
     </section>
     <!-- Article -->
     <!-- Footer -->

@@ -1,6 +1,6 @@
-<?php 
+<?php
 include '../../koneksi.php';
-session_start(); 
+session_start();
 
 $id = $_SESSION['id'];
 $query = "SELECT * FROM tb_admin INNER JOIN tb_user
@@ -208,7 +208,6 @@ $username = $row['username'];
                                 <div class="tab-pane fade show active profile-overview" id="profile-overview">
 
                                     <h5 class="card-title">Profile Details</h5>
-
                                     <div class="row">
                                         <div class="col-lg-3 col-md-4 label ">Nama Lengkap</div>
                                         <div class="col-lg-9 col-md-8"><?php echo $row['nama'] ?></div>
@@ -243,19 +242,12 @@ $username = $row['username'];
                                 <div class="tab-pane fade profile-edit pt-3" id="profile-edit">
 
                                     <!-- Profile Edit Form -->
-                                    <form>
+                                    <form role="form" method="POST" action="../../process/editAdmin.php">
                                         <div class="row mb-3">
                                             <label for="profileImage" class="col-md-4 col-lg-3 col-form-label">Profile
                                                 Image</label>
                                             <div class="col-md-8 col-lg-9">
                                                 <img src="assets/img/<?php echo $row['foto'] ?>" alt="Profile">
-                                                <div class="pt-2">
-                                                    <a href="#" class="btn btn-primary btn-sm"
-                                                        title="Upload new profile image"><i
-                                                            class="bi bi-upload"></i></a>
-                                                    <a href="#" class="btn btn-danger btn-sm"
-                                                        title="Remove my profile image"><i class="bi bi-trash"></i></a>
-                                                </div>
                                             </div>
                                         </div>
 
@@ -295,40 +287,10 @@ $username = $row['username'];
                                             </div>
                                         </div>
 
-                                        <!-- <div class="row mb-3">
-                                            <label for="Twitter" class="col-md-4 col-lg-3 col-form-label">Twitter
-                                                Profile</label>
-                                            <div class="col-md-8 col-lg-9">
-                                                <input name="twitter" type="text" class="form-control" id="Twitter"
-                                                    value="https://twitter.com/#">
-                                            </div>
+                                        <div class="text-center">
+                                            <button type="submit" name="Change" class="btn btn-primary">Edit
+                                                Profile</button>
                                         </div>
-
-                                        <div class="row mb-3">
-                                            <label for="Facebook" class="col-md-4 col-lg-3 col-form-label">Facebook
-                                                Profile</label>
-                                            <div class="col-md-8 col-lg-9">
-                                                <input name="facebook" type="text" class="form-control" id="Facebook"
-                                                    value="https://facebook.com/#">
-                                            </div>
-                                        </div>
-
-                                        <div class="row mb-3">
-                                            <label for="Instagram" class="col-md-4 col-lg-3 col-form-label">Instagram
-                                                Profile</label>
-                                            <div class="col-md-8 col-lg-9">
-                                                <input name="instagram" type="text" class="form-control" id="Instagram"
-                                                    value="https://instagram.com/#">
-                                            </div>
-                                        </div>
-
-                                        <div class="row mb-3">
-                                            <label for="Linkedin" class="col-md-4 col-lg-3 col-form-label">Linkedin
-                                                Profile</label>
-                                            <div class="col-md-8 col-lg-9">
-                                                <input name="linkedin" type="text" class="form-control" id="Linkedin"
-                                                    value="https://linkedin.com/#">
-                                            </div> -->
                                 </div>
 
                                 </form><!-- End Profile Edit Form -->

@@ -1,13 +1,30 @@
+<?php
+
+include '../../koneksi.php';
+session_start();
+
+$id = $_SESSION['id'];
+
+$query_user = "SELECT * FROM tb_customer INNER JOIN
+tb_user ON tb_user.id = tb_customer.id WHERE tb_customer.id = '$id'";
+
+$result_user = mysqli_query($conn, $query_user);
+$row_user = mysqli_fetch_assoc($result_user);
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>ParentCare - Profile</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../styles/style.css">
     <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
@@ -22,7 +39,7 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <div class="navbar-nav ms-auto">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="dashboard.php">Home</a>
                         <a class="nav-link" href="#">Artikel</a>
                         <a class="nav-link" href="#">FAQ</a>
                         <li class="nav-item dropdown">
@@ -36,7 +53,34 @@
                             </ul>
                         </li>
                         <a class="nav-link" href="#">Discuss</a>
-                        <a class="nav-login btn btn-success px-4 text-white btn-login" href="#">Login</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <img width="40px" src="../../asset/image/user/<?php echo $row_user['foto'] ?>"
+                                    alt="Profile">
+
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item d-flex align-items-center" href="edit-profile.php">
+                                        <i class="bi bi-gear"></i>
+                                        <span>Account Settings</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+
+                                <li>
+                                    <a class="dropdown-item d-flex align-items-center" href="../../logout.php">
+                                        <i class="bi bi-box-arrow-right"></i>
+                                        <span>Sign Out</span>
+                                    </a>
+                                </li>
+
+                            </ul><!-- End Profile Dropdown Items -->
+                        </li><!-- End Profile Nav -->
+
                     </div>
                 </div>
             </div>
@@ -49,16 +93,16 @@
             <div class="row mt-4 question-list">
                 <div class="col-3">
                     <div class="profile">
-                        <a class="navbar-brand mb-3 titleProfile text-center" href="#">Dolly Ranu</a>
+                        <a class="navbar-brand mb-3 titleProfile text-center"
+                            href="#"><?php echo $row_user['nama'] ?></a>
                         <div class="col-12 fotoProfile">
-                            <img src="asset/image/profile.jpeg" class="rounded-circle">
+                            <img src="../../asset/image/user/<?php echo $row_user['foto'] ?>">
                         </div>
                         <div class="col-12 profile-description mt-2">
-                            <p>dollyranu@gmail.com</p>
-                            <p>male</p>
-                            <p>20 years old</p>
-                            <p>08564587952</p>
-                            <p>Jogja</p>
+                            <p><?php echo $row_user['email'] ?></p>
+                            <p><?php echo $row_user['gender'] ?></p>
+                            <p><?php echo $row_user['tlp'] ?></p>
+                            <p><?php echo $row_user['alamat'] ?></p>
                         </div>
                         <div class="col-3 mt-3"> <a href="#editProfile" class="btn btnEdit">Edit Profile</a></div>
                         <div class="col-3 mt-3"> <a href="edit-profile-history.php" class="btn btnHistory">History
@@ -70,83 +114,68 @@
                 <div class="col-9">
                     <div class="card">
                         <a class="navbar-brand mb-3 titleEdit" id="editProfile">Edit Profile</a>
-                        <div class="row col-12 mb-3">
-                            <div class="col-sm">
-                                <label for="" class="form-label">First Name</label>
-                                <input date class="add-topic-title" placeholder="Your Name">
-                            </div>
-                            <div class="col-sm">
-                                <label for="" class="form-label">Last Name</label>
-                                <input type="text" class="add-topic-title" placeholder="Your Name">
-                            </div>
-                            <div class="col-sm">
-                                <label for="" class="form-label">Date of Birth</label>
-                                <input type="date" class="add-topic-title" placeholder="Your Name">
-                            </div>
-                        </div>
-
-                        <div class="row col-12 mb-3">
-                            <div class="col-lg-4">
-                                <label for="" class="form-label">Gender</label>
-                                <div class="genderRadio d-flex">
-                                    <div class="form-checks me-4">
-                                        <div class="cardGender">
-                                            <input class="form-check-inputs" type="radio" name="flexRadioDefault"
-                                                id="flexRadioDefault1">
-                                            <label class="form-check-label" for="flexRadioDefault1">
-                                                Male
-                                            </label>
-                                        </div>
-                                    </div>
-                                    <div class="form-checks me-4">
-                                        <div class="cardGender">
-                                            <input class="form-check-inputs" type="radio" name="flexRadioDefault"
-                                                id="flexRadioDefault2">
-                                            <label class="form-check-label" for="flexRadioDefault2">
-                                                Female
-                                            </label>
-                                        </div>
-                                    </div>
+                        <form action="../../process/editUser.php" method="post">
+                            <div class="row col-12 mb-3">
+                                <div class="col-sm">
+                                    <label for="" class="form-label">Name</label>
+                                    <input date class="add-topic-title" value="<?php echo $row_user['nama'] ?>"
+                                        name="nama">
                                 </div>
+                                <!-- <div class="col-lg-4">
+                                    <label for="" class="form-label">Gender</label>
+                                    <div class="genderRadio d-flex">
+                                        <div class="form-checks me-4">
+                                            <div class="cardGender">
+                                                <input class="form-check-inputs" type="radio" name="flexRadioDefault"
+                                                    id="flexRadioDefault1">
+                                                <label class="form-check-label" for="flexRadioDefault1">
+                                                    Male
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="form-checks me-4">
+                                            <div class="cardGender">
+                                                <input class="form-check-inputs" type="radio" name="flexRadioDefault"
+                                                    id="flexRadioDefault2">
+                                                <label class="form-check-label" for="flexRadioDefault2">
+                                                    Female
+                                                </label>
+                                            </div>
+                                        </div>
+
+                                    </div> -->
+
                             </div>
-                            <div class="col-lg-4">
-                                <label for="" class="form-label">Phone Number</label>
-                                <input type="text" class="add-topic-title" placeholder="Your Number">
+                            <div class="row col-12 mb-3">
+                                <div class="row col-12 mb-3">
+                                    <label for="" class="form-label">Phone Number</label>
+                                    <input type="text" class="add-topic-title" value="<?php echo $row_user['tlp'] ?>"
+                                        name="phoneNumber">
+                                </div>
+
+                                <div class="col-12 mb-3">
+                                    <label for="" class="form-label">Email</label>
+                                    <input type="email" class="add-topic-title" value="<?php echo $row_user['email'] ?>"
+                                        name="email">
+                                </div>
+                                <div class="col-12 mb-3">
+                                    <label for="" class="form-label">Home Address</label>
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="10"
+                                        name="address"
+                                        placeholder="Input Your Address"><?php echo $row_user['alamat'] ?></textarea>
+                                </div>
+
+                                <div class="col-3"> <button type="submit" class="btn btn-send">Save</button></div>
+
                             </div>
 
-                        </div>
-
-                        <div class="col-12 mb-3">
-                            <label for="" class="form-label">Email</label>
-                            <input type="email" class="add-topic-title" placeholder="Email">
-                        </div>
-                        <div class="col-12 mb-3">
-                            <label for="" class="form-label">Home Address</label>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="10" name="message"
-                                placeholder="Your Address"></textarea>
-                        </div>
-
-                        <div class="row col-12 mb-3">
-                            <div class="col-sm">
-                                <label for="" class="form-label">Zip Code</label>
-                                <input type="number" class="add-topic-title" placeholder="Code">
-                            </div>
-                            <div class="col-sm">
-                                <label for="" class="form-label">City</label>
-                                <input type="text" class="add-topic-title" placeholder="City">
-                            </div>
-                            <div class="col-sm">
-                                <label for="" class="form-label">Country</label>
-                                <input type="text" class="add-topic-title" placeholder="Country">
-                            </div>
-                        </div>
-
-                        <div class="col-3"> <button type="submit" class="btn btn-send">Save</button></div>
-
+                        </form>
                     </div>
+
                 </div>
-                <div class="col-1"></div>
             </div>
+            <div class="col-1"></div>
+        </div>
         </div>
     </section>
 
