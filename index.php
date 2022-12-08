@@ -35,9 +35,12 @@ $row_test = mysqli_fetch_assoc($result_test);
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>ParentCare</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500;700&family=Poppins&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -45,9 +48,7 @@ $row_test = mysqli_fetch_assoc($result_test);
         <nav class="navbar navbar-expand-lg navbar-light fixed-top py-4 bgcolor" data-aos="fade-down">
             <div class="container">
                 <a class="navbar-brand" href="#">Parent<span>Care</span></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarResponsive" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                    aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
@@ -56,8 +57,7 @@ $row_test = mysqli_fetch_assoc($result_test);
                         <a class="nav-link" href="#">Artikel</a>
                         <a class="nav-link" href="#">FAQ</a>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Layanan
                             </a>
                             <ul class="dropdown-menu">
@@ -66,8 +66,7 @@ $row_test = mysqli_fetch_assoc($result_test);
                             </ul>
                         </li>
                         <a class="nav-link" href="#">Discuss</a>
-                        <a class="nav-login btn btn-success px-4 text-white btn-login" id="login"
-                            href="pages/login.php">Login</a>
+                        <a class="nav-login btn btn-success px-4 text-white btn-login" id="login" href="pages/login.php">Login</a>
                     </div>
                 </div>
             </div>
@@ -239,8 +238,7 @@ $row_test = mysqli_fetch_assoc($result_test);
                     <div class="sosmed mt-lg-4">
                         <div class="row">
                             <div class="col-12">
-                                <a href="https://wa.me/6281393015244" target="_blank" class="infotxt"><i
-                                        class="bx bxl-whatsapp pe-2"></i></a>
+                                <a href="https://wa.me/6281393015244" target="_blank" class="infotxt"><i class="bx bxl-whatsapp pe-2"></i></a>
                                 <a href="#"><i class='bx bxl-instagram px-2'></i></a>
                                 <a href="#"><i class='bx bxl-facebook-circle ps-2'></i></a>
                             </div>
@@ -274,13 +272,10 @@ $row_test = mysqli_fetch_assoc($result_test);
                     <div class="info mt-4">
                         <h3>Media Sosial</h3>
                         <div class="footer-list mt-lg-3">
-                            <li><a class="nav-footer" href="#"><img src="asset/image/icon/icons8-instagram-30.png"
-                                        alt="Logo Instagram">
+                            <li><a class="nav-footer" href="#"><img src="asset/image/icon/icons8-instagram-30.png" alt="Logo Instagram">
                                     Instagram</a></li>
-                            <li><a class="nav-footer" href="#"><img src="asset/image/icon/icons8-facebook-30.png"
-                                        alt="Logo Instagram"> Facebook</a></li>
-                            <li><a class="nav-footer" href="#"><img src="asset/image/icon/icons8-twitter-30.png"
-                                        alt="Logo Instagram"> Twitter</a></li>
+                            <li><a class="nav-footer" href="#"><img src="asset/image/icon/icons8-facebook-30.png" alt="Logo Instagram"> Facebook</a></li>
+                            <li><a class="nav-footer" href="#"><img src="asset/image/icon/icons8-twitter-30.png" alt="Logo Instagram"> Twitter</a></li>
                         </div>
                     </div>
                 </div>
@@ -293,8 +288,7 @@ $row_test = mysqli_fetch_assoc($result_test);
         </div>
     </section>
     <!-- Footer -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
     </script>
 </body>
 

@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500;700&family=Poppins&display=swap');
 * {
     box-sizing: border-box !important;
     color: #000;
@@ -10,7 +11,8 @@
 }
 
 .navbar-brand {
-    font-weight: 500;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 700;
     font-size: 26px;
 }
 
