@@ -135,22 +135,22 @@ $row_test = mysqli_fetch_assoc($result_test);
                 </div>
                 <div class="col-12 col-md-4 col-lg-2">
                     <div class="info mt-4">
-                        <h3>More</h3>
+                        <h3>Kerja Sama</h3>
                         <div class="footer-list mt-lg-3">
-                            <li><a class="nav-footer" href="#">Syarat & Ketentuan</a></li>
-                            <li><a class="nav-footer" href="#">Privasi</a></li>
-                            <li><a class="nav-footer" href="#">Iklan</a></li>
+                            <li><a class="nav-footer" href="#">Info Kolaborasi</a></li>
+                            <li><a class="nav-footer" href="#">Mahasiswa</a></li>
+                            <li><a class="nav-footer" href="#">Komunitas</a></li>
+                            <li><a class="nav-footer" href="#">Sekolah</a></li>
                         </div>
                     </div>
                 </div>
                 <div class="col-12 col-md-4 col-lg-2">
                     <div class="info mt-4">
-                        <h3>Media Sosial</h3>
+                        <h3>More</h3>
                         <div class="footer-list mt-lg-3">
-                            <li><a class="nav-footer" href="#"><img src="../../asset/image/icon/icons8-instagram-30.png" alt="Logo Instagram">
-                                    Instagram</a></li>
-                            <li><a class="nav-footer" href="#"><img src="../../asset/image/icon/icons8-facebook-30.png" alt="Logo Instagram"> Facebook</a></li>
-                            <li><a class="nav-footer" href="#"><img src="../../asset/image/icon/icons8-twitter-30.png" alt="Logo Instagram"> Twitter</a></li>
+                            <li><a class="nav-footer" href="#">Syarat & Ketentuan</a></li>
+                            <li><a class="nav-footer" href="#">Privasi</a></li>
+                            <li><a class="nav-footer" href="#">Iklan</a></li>
                         </div>
                     </div>
                 </div>
