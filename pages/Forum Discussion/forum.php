@@ -74,7 +74,7 @@ $row_test = mysqli_fetch_assoc($result_test);
             <div class="row">
                 <div class="col-12" data-aos="fade-up" data-aos-once="true">
                     <h2 class="section-heading">FORUM DISCUSSION</h2>
-                    <p class="subheading">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit, consequuntur.
+                    <p class="subheading">Bagikan cerita parenting anda
                     </p>
                 </div>
             </div>
@@ -82,6 +82,17 @@ $row_test = mysqli_fetch_assoc($result_test);
                 <div class="col-1"></div>
                 <div class="col-10">
                     <div class="card">
+                        <div id="disqus_thread"></div>
+                        <script>
+                            (function() {
+                                var d = document,
+                                    s = d.createElement('script');
+                                s.src = 'https://parent-care.disqus.com/embed.js';
+                                s.setAttribute('data-timestamp', +new Date());
+                                (d.head || d.body).appendChild(s);
+                            })();
+                        </script>
+                        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                     </div>
                     <div class="col-1"></div>
                 </div>
@@ -157,6 +168,7 @@ $row_test = mysqli_fetch_assoc($result_test);
     <!-- Footer -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
     </script>
+    <script id="dsq-count-scr" src="//parent-care.disqus.com/count.js" async></script>
 </body>
 
 </html>
