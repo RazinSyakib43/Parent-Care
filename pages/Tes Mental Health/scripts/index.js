@@ -44,13 +44,6 @@ function countAnswer() {
     }
     i++;
     if(jsonData.length-1 < i){
-        // document.write("Skor anda adalah : ");
-        // document.write("<br>");
-        // document.write("Depresi = " + countDepresi);
-        // document.write("<br>");
-        // document.write("Cemas = " + countCemas);
-        // document.write("<br>");
-        // document.write("Stress = " + countStress);
         document.getElementById("score-depresi").innerHTML = countDepresi;
         document.getElementById("score-cemas").innerHTML = countCemas;
         document.getElementById("score-stress").innerHTML = countStress;
