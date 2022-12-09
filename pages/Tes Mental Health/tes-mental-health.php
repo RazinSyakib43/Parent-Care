@@ -88,9 +88,20 @@ $row_test = mysqli_fetch_assoc($result_test);
                         </div>
                     </div>
                 </div>
+                <div class=" col-1"></div>
             </div>
-            <div class=" col-1"></div>
-        </div>
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-10">
+                    <div class="card">
+                        Skor anda adalah: <br>
+                        Depresi = <span id="score-depresi"></span> <br>
+                        Cemas = <span id="score-cemas"></span> <br>
+                        Stress = <span id="score-stress"></span>
+                    </div>
+                </div>
+                <div class=" col-1"></div>
+            </div>
         </div>
     </section>
     <!-- Footer -->
