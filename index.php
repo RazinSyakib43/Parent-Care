@@ -38,7 +38,7 @@ $row_test = mysqli_fetch_assoc($result_test);
     <header>
         <nav class="navbar navbar-expand-lg navbar-light fixed-top py-4 bgcolor" data-aos="fade-down">
             <div class="container">
-                <a class="navbar-brand" href="#">Parent<span>Care</span></a>
+                <a class="navbar-brand" href="index.php">Parent<span>Care</span></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -52,11 +52,11 @@ $row_test = mysqli_fetch_assoc($result_test);
                                 Layanan
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Konsultasi</a></li>
+                                <li><a class="dropdown-item" href="pages/Transaksi/konsultasi.php">Konsultasi</a></li>
                                 <li><a class="dropdown-item" href="pages/Tes Mental Health/tes-mental-health.php">Tes Kesehatan Mental</a></li>
                             </ul>
                         </li>
-                        <a class="nav-link" href="#">Discuss</a>
+                        <a class="nav-link" href="pages/Forum Discussion/forum.php">Discuss</a>
                         <a class="nav-login btn btn-success px-4 text-white btn-login" id="login" href="pages/login.php">Login</a>
                     </div>
                 </div>
