@@ -33,25 +33,25 @@ $row_test = mysqli_fetch_assoc($result_test);
     <header>
         <nav class="navbar navbar-expand-lg navbar-light fixed-top py-4 bgcolor" data-aos="fade-down">
             <div class="container">
-                <a class="navbar-brand" href="#">Parent<span>Care</span></a>
+                <a class="navbar-brand" href="../../index.php">Parent<span>Care</span></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <div class="navbar-nav ms-auto">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        <a class="nav-link" href="#">Artikel</a>
-                        <a class="nav-link" href="#">FAQ</a>
+                        <a class="nav-link active" aria-current="page" href="../../index.php">Home</a>
+                        <a class="nav-link" href="../Article/article.php">Artikel</a>
+                        <a class="nav-link" href="../FAQ/faq.php">FAQ</a>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Layanan
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Konsultasi</a></li>
-                                <li><a class="dropdown-item" href="#">Tes Minat Bakat</a></li>
+                                <li><a class="dropdown-item" href="../Transaksi/konsultasi.php">Konsultasi</a></li>
+                                <li><a class="dropdown-item" href="tes-mental-health.php">Tes Minat Bakat</a></li>
                             </ul>
                         </li>
-                        <a class="nav-link" href="#">Discuss</a>
+                        <a class="nav-link" href="../Forum Discussion/forum.php">Discuss</a>
                         <a class="nav-login btn btn-success px-4 text-white btn-login" id="login" href="../pages/login.php">Login</a>
                     </div>
                 </div>
@@ -108,11 +108,12 @@ $row_test = mysqli_fetch_assoc($result_test);
     <section class="footer mt-5">
         <div class="container">
             <div class="row">
+
                 <div class="col-12 col-md-4 col-lg-3 mt-3">
                     <div class="logo-footer">
                         <a class="navbar-brand" href="#">ParentCare.</a>
                     </div>
-                    <div class="info mt-lg-4">
+                    <div class="info mt-lg-2">
                         <div class="row">
                             <div class="col-12">
                                 <a href="" class=" infotxt">Layanan
@@ -122,11 +123,17 @@ $row_test = mysqli_fetch_assoc($result_test);
                     </div>
                     <div class="sosmed mt-lg-4">
                         <div class="row">
-                            <div class="col-12">
-                                <a href="https://wa.me/6281393015244" target="_blank" class="infotxt"><i class="bx bxl-whatsapp pe-2"></i></a>
-                                <a href="#"><i class='bx bxl-instagram px-2'></i></a>
-                                <a href="#"><i class='bx bxl-facebook-circle ps-2'></i></a>
+                            <div class="col-4">
+                                <a href="https://wa.me/6282133635122" target="_blank" class="infotxt"><i class="fa-brands fa-whatsapp"></i></a>
                             </div>
+                            <div class="col-4">
+                                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            </div>
+                            <div class="col-4">
+                                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                            </div>
+
+
                         </div>
                     </div>
                 </div>
@@ -135,41 +142,32 @@ $row_test = mysqli_fetch_assoc($result_test);
                 </div>
                 <div class="col-12 col-md-4 col-lg-2">
                     <div class="info mt-4">
-                        <h3>Lebih dekat</h3>
+                        <h3>About ParentCare</h3>
                         <div class="footer-list mt-lg-3">
-                            <li><a class="nav-footer" href="#">Lorem Ipsum</a></li>
-                            <li><a class="nav-footer" href="#">Lorem Ipsum</a></li>
-                            <li><a class="nav-footer" href="#">Lorem Ipsum</a></li>
+                            <li><a class="nav-footer" href="#">Tentang Kami</a></li>
+                            <li><a class="nav-footer" href="#">Hubungi Kami</a></li>
+                            <li><a class="nav-footer" href="#">ParentCare Happy</a></li>
                         </div>
                     </div>
                 </div>
                 <div class="col-12 col-md-4 col-lg-2">
                     <div class="info mt-4">
-                        <h3>Lebih dekat</h3>
+                        <h3>Kerja Sama</h3>
                         <div class="footer-list mt-lg-3">
-                            <li><a class="nav-footer" href="#">Lorem Ipsum</a></li>
-                            <li><a class="nav-footer" href="#">Lorem Ipsum</a></li>
-                            <li><a class="nav-footer" href="#">Lorem Ipsum</a></li>
+                            <li><a class="nav-footer" href="#">Info Kolaborasi</a></li>
+                            <li><a class="nav-footer" href="#">Mahasiswa</a></li>
+                            <li><a class="nav-footer" href="#">Komunitas</a></li>
+                            <li><a class="nav-footer" href="#">Sekolah</a></li>
                         </div>
                     </div>
                 </div>
                 <div class="col-12 col-md-4 col-lg-2">
                     <div class="info mt-4">
-                        <h3>Lebih dekat</h3>
+                        <h3>More</h3>
                         <div class="footer-list mt-lg-3">
-                            <li><a class="nav-footer" href="#">Lorem Ipsum</a></li>
-                            <li><a class="nav-footer" href="#">Lorem Ipsum</a></li>
-                            <li><a class="nav-footer" href="#">Lorem Ipsum</a></li>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-4 col-lg-2">
-                    <div class="info mt-4">
-                        <h3>Lebih dekat</h3>
-                        <div class="footer-list mt-lg-3">
-                            <li><a class="nav-footer" href="#">Lorem Ipsum</a></li>
-                            <li><a class="nav-footer" href="#">Lorem Ipsum</a></li>
-                            <li><a class="nav-footer" href="#">Lorem Ipsum</a></li>
+                            <li><a class="nav-footer" href="#">Syarat & Ketentuan</a></li>
+                            <li><a class="nav-footer" href="#">Privasi</a></li>
+                            <li><a class="nav-footer" href="#">Iklan</a></li>
                         </div>
                     </div>
                 </div>
