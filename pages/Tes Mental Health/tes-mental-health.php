@@ -3,16 +3,6 @@
 include 'koneksi.php';
 session_start();
 
-if (!isset($_SESSION['id'])) {
-
-    //Penggunaan javascript
-    echo "<script>var elm = document.getElementById('login');
-elm.style.display = 'none';</script>";
-
-    //Penggunaan tag style pada head
-    echo '<style>button {display:none;}</style>';
-}
-
 $query =
     "SELECT * from tb_dokter";
 
@@ -183,7 +173,11 @@ $row_test = mysqli_fetch_assoc($result_test);
     <!-- Footer -->
     <script src="scripts/data.js"></script>
     <script src="scripts/index.js"></script>
-
+    <script>
+        $('.element').on('click', function() {
+            $(this).toggleClass("active");
+        });
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
     </script>
 
