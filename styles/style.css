@@ -344,15 +344,23 @@ input[type="radio"] {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #1C4755;
+    color: #fff;
 }
 
 .search-btn span{
-    color: #fff !important;
+    color: #fff ;
     margin-right: 10px;
 }
 
 .search-btn i{
-    color: #fff !important;
+    color: #fff;
+}
+
+.search-btn:hover{
+    background-color: #fff !important;
+    color: #1C4755 !important;
+    border: 2px solid #1C4755;
 }
 
 @media screen and (max-width: 1034px){
