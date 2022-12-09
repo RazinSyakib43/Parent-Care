@@ -3,16 +3,6 @@
 include '../../koneksi.php';
 session_start();
 
-if (!isset($_SESSION['id'])) {
-
-    //Penggunaan javascript
-    echo "<script>var elm = document.getElementById('login');
-elm.style.display = 'none';</script>";
-
-    //Penggunaan tag style pada head
-    echo '<style>button {display:none;}</style>';
-}
-
 $query =
     "SELECT * from tb_dokter";
 
