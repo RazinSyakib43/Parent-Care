@@ -340,6 +340,21 @@ input[type="radio"] {
     color: #666666;
 }
 
+.search-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-btn span{
+    color: #fff !important;
+    margin-right: 10px;
+}
+
+.search-btn i{
+    color: #fff !important;
+}
+
 @media screen and (max-width: 1034px){
     .search-btn span{
         display: none;
