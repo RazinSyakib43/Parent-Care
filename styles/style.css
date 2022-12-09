@@ -318,3 +318,23 @@
     background-color: #1C4755;
     color: #fff;
 }
+
+.sosmed i{
+    font-size: 36px;
+    color: #fff;
+}
+
+.ques {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333333;
+  }
+  
+  input[type="radio"] {
+    margin-right: 10px;
+  }
+  
+  #skorr0, #skorr1, #skorr2, #skorr3 {
+    font-size: 16px;
+    color: #666666;
+  }
