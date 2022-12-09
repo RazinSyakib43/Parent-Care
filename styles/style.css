@@ -312,6 +312,7 @@
     border-radius: 5px;
 }
 
+
 .btn-send {
     width: 182px;
     height: 54px;
@@ -330,11 +331,22 @@
     color: #333333;
   }
   
-  input[type="radio"] {
+input[type="radio"] {
     margin-right: 10px;
-  }
+}
   
-  #skorr0, #skorr1, #skorr2, #skorr3 {
+#skorr0, #skorr1, #skorr2, #skorr3 {
     font-size: 16px;
     color: #666666;
-  }
+}
+
+@media screen and (max-width: 1034px){
+    .search-btn span{
+        display: none;
+    }
+
+    .search-btn{
+        width: 50px;
+        height: 54px;
+    }
+}
