@@ -33,7 +33,7 @@ $row_test = mysqli_fetch_assoc($result_test);
 </head>
 
 <body>
-<header>
+    <header>
         <nav class="navbar navbar-expand-lg navbar-light fixed-top py-4 bgcolor" data-aos="fade-down">
             <div class="container">
                 <a class="navbar-brand" href="../../index.php">Parent<span>Care</span></a>
@@ -115,8 +115,6 @@ $row_test = mysqli_fetch_assoc($result_test);
                             <div class="col-4">
                                 <a href="#"><i class="fa-brands fa-facebook"></i></a>
                             </div>
-
-
                         </div>
                     </div>
                 </div>
@@ -164,61 +162,7 @@ $row_test = mysqli_fetch_assoc($result_test);
     </section>
     <!-- Footer -->
 
-    <script>
-        let DATA = null;
-        const form = document.querySelector('form');
-        const newsContainer = document.querySelector('#news-container');
-
-        async function getData() {
-            const fetchData = await fetch(
-                'https://newsapi.org/v2/top-headlines?country=id&category=health&apiKey=fab180adfd804228917c512c4599d0d4'
-            );
-            const response = await fetchData.json();
-
-            for (const article of response.articles) {
-                newsContainer.innerHTML += templateNews(article);
-            }
-
-            DATA = response;
-        }
-
-        form.addEventListener('submit', (event) => {
-            event.preventDefault();
-            event.stopPropagation();
-
-            let filteredNews = null;
-            const inputSearch = event.srcElement[0];
-
-            // console.log(event);
-            for (const article of DATA.articles) {
-                filteredNews = DATA.articles.filter((item) => {
-                    return item.title === inputSearch.value;
-                });
-            }
-
-            newsContainer.innerHTML = '';
-            for (const article of filteredNews) {
-                newsContainer.innerHTML += templateNews(article);
-            }
-        });
-
-        function templateNews(data) {
-            return `
-            <div class="col-12 col-md-6 col-lg-3 mt-4" id="news-item">
-                <div class="card">
-                    <img src="${data.urlToImage}" alt="">
-                    <a href="${data.url}" class="mt-5">
-                        <h6>${data.title}</h6>
-                    </a>
-                    <p class="article-categories">${data.description}</p>
-                    <p class="article-time">${data.publishedAt} by ${data.author}</p>
-                </div>
-            </div>
-            `;
-        }
-
-        getData();
-    </script>
+    <script src="fetch newsapi.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
     </script>
