@@ -64,7 +64,6 @@ $row_test = mysqli_fetch_assoc($result_test);
     <!-- Article -->
     <section class="article">
         <div class="container">
-
             <div class="row mt-5">
                 <div class="col-12" data-aos="fade-up" data-aos-once="true" data-aos-delay="100">
                     <h2 class="section-heading">ARTICLE</h2>
@@ -72,18 +71,14 @@ $row_test = mysqli_fetch_assoc($result_test);
                     </p>
                 </div>
             </div>
-
             <form action="">
                 <div class="row mt-4">
                     <div class="col-10"><input type="text" class="search" placeholder="Search for article" data-aos="fade-right" data-aos-once="true" data-aos-delay="200"></div>
                     <div class="col-2"><button type="submit" class="btn btn-send search-btn" data-aos="fade-left" data-aos-once="true" data-aos-delay="200"><span> Search </span><i class="fa-solid fa-magnifying-glass"></i></button></div>
                 </div>
             </form>
-
-            <main>
-                <div id="news-container" class="row" data-aos="fade-up" data-aos-once="true" data-aos-delay="200">
-                </div>
-            </main>
+            <div id="news-container" class="row" data-aos="fade-up" data-aos-once="true" data-aos-delay="200">
+            </div>
         </div>
     </section>
     <!-- Article -->
