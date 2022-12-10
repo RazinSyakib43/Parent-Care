@@ -16,7 +16,7 @@ async function getData() {
             return;
         }
 
-        const DATAArray = Array.from(DATA.data);
+        const DATAArray = Array.from(DATA.data.posts);
 
         for (const article of DATAArray) {
             newsContainer.innerHTML += templateNews(article);
@@ -33,6 +33,7 @@ form.addEventListener('submit', (event) => {
     let filteredNews = null;
     const inputSearch = event.srcElement[0];
 
+    const DATAArray = Array.from(DATA.data.posts);
     // console.log(event);
     for (const article of DATAArray) {
         filteredNews = DATAArray.filter((item) => {
