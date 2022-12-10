@@ -11,7 +11,7 @@ async function getData() {
 
         console.log('DATA API nya', DATA);
         if (newsContainer === null) {
-            console.error('HTML element with id "news-container" not found!');
+            console.error('Artikel tidak dapat ditampilkan');
             return;
         }
 
