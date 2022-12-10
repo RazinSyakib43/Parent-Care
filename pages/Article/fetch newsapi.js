@@ -3,14 +3,14 @@ const form = document.querySelector('form');
 const newsContainer = document.querySelector('#news-container');
 
 async function getData() {
-    const fetchData = await fetch(
+    const response = await fetch(
         'https://newsapi.org/v2/top-headlines?country=id&category=health&apiKey=fab180adfd804228917c512c4599d0d4'
     );
-    const response = await fetchData.json();
+    const data = await response.json();
 
-    DATA = response;
+    DATA = data;
 
-    for (const article of response.articles) {
+    for (const article of data.articles) {
         newsContainer.innerHTML += templateNews(article);
     }
 }
