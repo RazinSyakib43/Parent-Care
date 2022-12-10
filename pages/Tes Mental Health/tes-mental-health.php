@@ -90,14 +90,28 @@ $row_test = mysqli_fetch_assoc($result_test);
                 </div>
                 <div class=" col-1"></div>
             </div>
-            <div class="row">
+            <div class="row mt-2 ">
                 <div class="col-1"></div>
                 <div class="col-10">
-                    <div class="card">
-                        Skor anda adalah: <br>
-                        Depresi = <span id="score-depresi"></span> <br>
-                        Cemas = <span id="score-cemas"></span> <br>
-                        Stress = <span id="score-stress"></span>
+                    <div class="card skor-card">
+                        <h2 class="section-heading text-white">Skor anda adalah:</h2>
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="sub-skor-card">
+                                    <h3 class="sub-title-kategori">Depresi = <span id="score-depresi"></span></h3>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="sub-skor-card">
+                                    <h3 class="sub-title-kategori">Cemas = <span id="score-cemas"></span></h3>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="sub-skor-card">
+                                    <h3 class="sub-title-kategori">Stress = <span id="score-stress"></span></h3>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class=" col-1"></div>
