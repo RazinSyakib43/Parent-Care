@@ -1,4 +1,4 @@
-let DATA = null;
+let DATA = {};
 const form: HTMLFormElement = document.querySelector('form');
 const newsContainer = document.querySelector('#news-container');
 
@@ -56,4 +56,3 @@ function templateNews(data) {
 }
 
 getData();
-``
