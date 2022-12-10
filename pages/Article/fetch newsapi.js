@@ -8,11 +8,11 @@ async function getData() {
     );
     const response = await fetchData.json();
 
+    DATA = response;
+    
     for (const article of response.articles) {
         newsContainer.innerHTML += templateNews(article);
     }
-
-    DATA = response;
 }
 
 form.addEventListener('submit', (event) => {
@@ -36,6 +36,11 @@ form.addEventListener('submit', (event) => {
 });
 
 function templateNews(data) {
+    let image = '';
+    if (data.urlToImage !== null) {
+        image = `<img src="${data.urlToImage}" alt="">`;
+    }
+
     return `
     <div class="col-12 col-md-6 col-lg-3 mt-4" id="news-item">
         <div class="card">
