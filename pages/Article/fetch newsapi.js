@@ -3,17 +3,22 @@ const form = document.querySelector('form');
 const newsContainer = document.querySelector('#news-container');
 
 async function getData() {
-    const response = await fetch(
-        'https://newsapi.org/v2/top-headlines?country=id&category=health&apiKey=fab180adfd804228917c512c4599d0d4'
-    );
-    const data = await response.json();
+    try {
+        const response = await fetch(
+            'https://newsapi.org/v2/top-headlines?country=id&category=health&apiKey=fab180adfd804228917c512c4599d0d4'
+        );
+        const data = await response.json();
 
-    DATA = data;
+        DATA = data;
 
-    for (const article of data.articles) {
-        newsContainer.innerHTML += templateNews(article);
+        for (const article of data.articles) {
+            newsContainer.innerHTML += templateNews(article);
+        }
+    } catch (error) {
+        console.error(error);
     }
 }
+
 
 form.addEventListener('submit', (event) => {
     event.preventDefault();
@@ -30,9 +35,12 @@ form.addEventListener('submit', (event) => {
     }
 
     newsContainer.innerHTML = '';
-    for (const article of filteredNews) {
+    for (const article of data.results) {
         newsContainer.innerHTML += templateNews(article);
     }
+    
+    console.log(data);
+
 });
 
 function templateNews(data) {
