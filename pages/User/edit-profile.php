@@ -40,18 +40,18 @@ $row_user = mysqli_fetch_assoc($result_user);
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <div class="navbar-nav ms-auto">
                         <a class="nav-link active" aria-current="page" href="dashboard.php">Home</a>
-                        <a class="nav-link" href="#">Artikel</a>
-                        <a class="nav-link" href="#">FAQ</a>
+                        <a class="nav-link" href="../Article/article.php">Artikel</a>
+                        <a class="nav-link" href="../FAQ/faq.php">FAQ</a>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Layanan
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Konsultasi</a></li>
-                                <li><a class="dropdown-item" href="#">Tes Minat Bakat</a></li>
+                                <li><a class="dropdown-item" href="../Transaksi/konsultasi.php">Konsultasi</a></li>
+                                <li><a class="dropdown-item" href="../Tes Mental Health/tes-mental-health.php">Tes Kesehatan Mental</a></li>
                             </ul>
                         </li>
+                        <a class="nav-link" href="../Forum Discussion/forum.php">Discuss</a>
                         <a class="nav-link" href="#">Discuss</a>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
