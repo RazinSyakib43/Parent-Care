@@ -16,31 +16,31 @@ function generate(index) {
 
 function countAnswer() {
     if (document.getElementById("skor1").checked && jsonData[i].skor1 && jsonData[i].category=="Depresi") {
-        countDepresi++;
-    }
-    if (document.getElementById("skor2").checked && jsonData[i].skor2 && jsonData[i].category=="Depresi") {
         countDepresi+=2;
     }
+    if (document.getElementById("skor2").checked && jsonData[i].skor2 && jsonData[i].category=="Depresi") {
+        countDepresi+=4;
+    }
     if (document.getElementById("skor3").checked && jsonData[i].skor3 && jsonData[i].category=="Depresi") {
-        countDepresi+=3;
+        countDepresi+=6;
     }
     if (document.getElementById("skor1").checked && jsonData[i].skor1 && jsonData[i].category=="Cemas") {
-        countCemas++;
-    }
-    if (document.getElementById("skor2").checked && jsonData[i].skor2 && jsonData[i].category=="Cemas") {
         countCemas+=2;
     }
+    if (document.getElementById("skor2").checked && jsonData[i].skor2 && jsonData[i].category=="Cemas") {
+        countCemas+=4;
+    }
     if (document.getElementById("skor3").checked && jsonData[i].skor3 && jsonData[i].category=="Cemas") {
-        countCemas+=3;
+        countCemas+=6;
     }
     if (document.getElementById("skor1").checked && jsonData[i].skor1 && jsonData[i].category=="Stress") {
-        countStress++;
-    }
-    if (document.getElementById("skor2").checked && jsonData[i].skor2 && jsonData[i].category=="Stress") {
         countStress+=2;
     }
+    if (document.getElementById("skor2").checked && jsonData[i].skor2 && jsonData[i].category=="Stress") {
+        countStress+=4;
+    }
     if (document.getElementById("skor3").checked && jsonData[i].skor3 && jsonData[i].category=="Stress") {
-        countStress+=3;
+        countStress+=6;
     }
     i++;
     if(jsonData.length-1 < i){
