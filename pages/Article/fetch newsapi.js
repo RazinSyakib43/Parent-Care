@@ -9,7 +9,7 @@ async function getData() {
     const response = await fetchData.json();
 
     DATA = response;
-    
+
     for (const article of response.articles) {
         newsContainer.innerHTML += templateNews(article);
     }
@@ -44,7 +44,7 @@ function templateNews(data) {
     return `
     <div class="col-12 col-md-6 col-lg-3 mt-4" id="news-item">
         <div class="card">
-            <img src="${data.urlToImage}" alt="">
+            ${image}
             <a href="${data.url}" class="mt-5">
                 <h6>${data.title}</h6>
             </a>
