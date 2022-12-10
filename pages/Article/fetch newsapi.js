@@ -1,5 +1,5 @@
 let DATA = {};
-const form: HTMLFormElement = document.querySelector('form');
+const form = document.querySelector('form');
 const newsContainer = document.querySelector('#news-container');
 
 async function getData() {
