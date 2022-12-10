@@ -7,7 +7,7 @@ async function getData() {
         const response = await fetch(
             'https://newsapi.org/v2/top-headlines?country=id&category=health&apiKey=fab180adfd804228917c512c4599d0d4'
         );
-        const data = await response.json();
+        let data = await response.json();
 
         DATA = data;
 
@@ -19,7 +19,6 @@ async function getData() {
     }
 }
 
-
 form.addEventListener('submit', (event) => {
     event.preventDefault();
     event.stopPropagation();
@@ -28,19 +27,16 @@ form.addEventListener('submit', (event) => {
     const inputSearch = event.srcElement[0];
 
     // console.log(event);
-    for (const article of DATA.articles) {
-        filteredNews = DATA.articles.filter((item) => {
+    for (const article of DATA.results) {
+        filteredNews = DATA.results.filter((item) => {
             return item.title === inputSearch.value;
         });
     }
 
     newsContainer.innerHTML = '';
-    for (const article of data.results) {
+    for (const article of filteredNews) {
         newsContainer.innerHTML += templateNews(article);
     }
-    
-    console.log(data);
-
 });
 
 function templateNews(data) {
