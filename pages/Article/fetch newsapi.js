@@ -3,10 +3,9 @@ const form = document.querySelector('form');
 const newsContainer = document.querySelector('#news-container');
 
 async function getData() {
-
     try {
         const response = await fetch(
-            'https://api-berita-indonesia.vercel.app/suara/health'
+            'https://api-berita-indonesia.vercel.app/tribun/kesehatan/'
         );
         DATA = await response.json();
 
@@ -37,10 +36,10 @@ form.addEventListener('submit', (event) => {
     // console.log(event);
     for (const article of DATAArray) {
         filteredNews = DATAArray.filter((item) => {
-            return item.posts.title === inputSearch.value;
+            return item.data.title === inputSearch.value;
         });
     }
-    
+
     newsContainer.innerHTML = '';
     for (const article of filteredNews) {
         newsContainer.innerHTML += templateNews(article);
@@ -49,19 +48,19 @@ form.addEventListener('submit', (event) => {
 
 function templateNews(data) {
     let image = '';
-    if (DATA.data.posts.thumbnail !== null) {
-        image = `<img src="${DATA.data.posts.thumbnail}" alt="">`;
+    if (data.thumbnail !== null) {
+        image = `<img src="${data.thumbnail}" alt="">`;
     }
 
     return `
     <div class="col-12 col-md-6 col-lg-3 mt-4" id="news-item">
         <div class="card">
             ${image}
-            <a href="${DATA.data.posts.link}" class="mt-5">
-                <h6>${DATA.data.posts.title}</h6>
+            <a href="${data.link}" class="mt-5">
+                <h6>${data.title}</h6>
             </a>
-            <p class="article-categories">${DATA.data.posts.description}</p>
-            <p class="article-time">${DATA.data.posts.pubDate}</p>
+            <p class="article-categories">${data.description}</p>
+            <p class="article-time">${data.pubDate}</p>
         </div>
     </div>
     `;
