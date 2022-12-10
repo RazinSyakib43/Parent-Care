@@ -62,7 +62,7 @@ $row_test = mysqli_fetch_assoc($result_test);
         <div class="container mt-5">
             <div class="row">
                 <div class="col-12" data-aos="fade-up" data-aos-once="true">
-                    <h2 class="section-heading">Answer these question!!!</h2>
+                    <h2 class="section-heading">Tes kesehatan mental anda</h2>
                 </div>
             </div>
             <div class="row mt-4 question-list">
