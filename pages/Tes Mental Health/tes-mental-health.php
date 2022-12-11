@@ -99,6 +99,7 @@ $row_test = mysqli_fetch_assoc($result_test);
                             <div class="col-4">
                                 <div class="sub-skor-card">
                                     <h3 class="sub-title-kategori">Depresi = <span id="score-depresi"></span></h3>
+                                    <p><span id="status-mentalhealth"></span></p>
                                 </div>
                             </div>
                             <div class="col-4">

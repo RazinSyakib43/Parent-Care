@@ -47,6 +47,28 @@ function countAnswer() {
         document.getElementById("score-depresi").innerHTML = countDepresi;
         document.getElementById("score-cemas").innerHTML = countCemas;
         document.getElementById("score-stress").innerHTML = countStress;
+
+        // Jika hasil "Normal"
+        if(countDepresi >=2 && countDepresi <= 14 ){
+            document.getElementById("score-stress").innerHTML = countDepresi + "Normal (Tetap jaga kesehatan mental anda)";
+        }
+        if(countCemas >=2 && countCemas <= 14 ){
+            document.getElementById("score-cemas").innerHTML = countCemas + "Normal (Tetap jaga kesehatan mental anda)";
+        }
+        if(countStress >=2 && countStress <= 14 ){
+            document.getElementById("score-depresi").innerHTML = countStress + "Normal (Tetap jaga kesehatan mental anda)";
+        }
+
+        // Jika hasil "Ringan"
+        if(countDepresi >=16 && countDepresi <= 18 ){
+            document.getElementById("score-stress").innerHTML = countDepresi + "Ringan (Tetap jaga kesehatan mental anda)";
+        }
+        if(countCemas >=16 && countCemas <= 18 ){
+            document.getElementById("score-cemas").innerHTML = countCemas + "Ringan (Tetap jaga kesehatan mental anda)";
+        }
+        if(countStress >=16 && countStress <= 18 ){
+            document.getElementById("score-depresi").innerHTML = countStress + "Ringan (Tetap jaga kesehatan mental anda)";
+        }
     }
     generate(i);
 }
