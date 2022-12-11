@@ -445,3 +445,7 @@ input[type="radio"] {
         margin-right: 10px;
     }
 }
+
+.text-justify{
+    text-align: justify;
+}
