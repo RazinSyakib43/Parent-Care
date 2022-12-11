@@ -78,51 +78,37 @@ $row_test = mysqli_fetch_assoc($result_test);
                             <div class="accordion-item" data-aos="fade-up" data-aos-once="true" data-aos-delay="100">
                                 <h2 class="accordion-header" id="flush-headingOne">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                                        Bagaimana cara membooking dokter?
+                                        Apa itu layanan ParentCare?
                                     </button>
                                 </h2>
                                 <div id="flush-collapseOne" class="accordion-collapse collapse col-12" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
                                     <div class="accordion-body text-wrap">
-                                        <p>Silahkan ikuti langkah berikut:</p>
-                                        <ol>
-                                            <li>Silahkan buka link <a href="https://parentcare237.000webhostapp.com/pages/Transaksi/konsultasi.php">https://parentcare237.000webhostapp.com/pages/Transaksi/konsultasi.php</a></li>
-                                            <li>Pilih paket yang diinginkan, lalu next</li>
-                                            <li>Pilih bank untuk transaksi, jangan lupa transfer ke rekening ParentCare, lalu next</li>
-                                            <li>Upload bukti pembayaran, lalu finish</li>
-                                        </ol>
+                                        Layanan ParentCare adalah layanan psikologi anak dan parenting yang ditujukan untuk membantu orang tua menangani masalah-masalah yang sering dihadapi saat mengasuh anak-anak. Layanan ini menyediakan bantuan dan saran yang terbaik bagi orang tua agar dapat mengembangkan kemampuan parenting yang efektif dan meningkatkan kualitas hubungan dengan anak-anak mereka.
                                     </div>
                                 </div>
                             </div>
                             <div class=" accordion-item" data-aos="fade-up" data-aos-once="true" data-aos-delay="200">
                                 <h2 class="accordion-header" id="flush-headingTwo">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                                        Bagaimana cara membooking dokter?
+                                        Siapa saja yang bisa menggunakan layanan ParentCare?
                                     </button>
                                 </h2>
                                 <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
                                     <div class="accordion-body" style="color: black;">
-                                        <p style="color: black;">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu tellus
-                                            ultricies, luctus ligula id, varius elit. Aenean id auctor felis. Sed ac
-                                            neque
-                                            convallis, tincidunt est ac, cursus justo.
-                                        </p>
+                                        <p>Layanan ParentCare ditujukan untuk orang tua yang memiliki anak usia sekolah dasar hingga remaja, yang ingin mendapatkan bantuan dan saran terbaik untuk mengatasi masalah-masalah yang sering dihadapi saat mengasuh anak-anak.</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="accordion-item" data-aos="fade-up" data-aos-once="true" data-aos-delay="300">
                                 <h2 class="accordion-header" id="flush-headingThree">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                                        Bagaimana cara membooking dokter?
+                                        Bagaimana cara mengakses layanan ParentCare?
                                     </button>
                                 </h2>
                                 <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
                                     <div class="accordion-body" style="color: black;">
                                         <p style="color: black;">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu tellus
-                                            ultricies, luctus ligula id, varius elit. Aenean id auctor felis. Sed ac
-                                            neque
-                                            convallis, tincidunt est ac, cursus justo.
+                                            Anda dapat mengakses layanan ParentCare melalui telepon atau email. Anda juga dapat mengunjungi situs web kami untuk mengetahui lebih lanjut tentang layanan yang kami tawarkan, dan untuk menghubungi kami untuk mendapatkan bantuan lebih lanjut.
                                         </p>
                                     </div>
                                 </div>
@@ -130,50 +116,13 @@ $row_test = mysqli_fetch_assoc($result_test);
                             <div class="accordion-item" data-aos="fade-up" data-aos-once="true" data-aos-delay="100">
                                 <h2 class="accordion-header" id="flush-headingFour">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
-                                        Bagaimana cara membooking dokter?
+                                        Apakah layanan ParentCare dilakukan secara online atau offline?
                                     </button>
                                 </h2>
                                 <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
                                     <div class="accordion-body" style="color: black;">
                                         <p style="color: black;">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu tellus
-                                            ultricies, luctus ligula id, varius elit. Aenean id auctor felis. Sed ac
-                                            neque
-                                            convallis, tincidunt est ac, cursus justo.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item" data-aos="fade-up" data-aos-once="true" data-aos-delay="200">
-                                <h2 class="accordion-header" id="flush-headingFive">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
-                                        Bagaimana cara membooking dokter?
-                                    </button>
-                                </h2>
-                                <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
-                                    <div class="accordion-body" style="color: black;">
-                                        <p style="color: black;">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu tellus
-                                            ultricies, luctus ligula id, varius elit. Aenean id auctor felis. Sed ac
-                                            neque
-                                            convallis, tincidunt est ac, cursus justo.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item" data-aos="fade-up" data-aos-once="true" data-aos-delay="300">
-                                <h2 class="accordion-header" id="flush-headingSix">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
-                                        Bagaimana cara membooking dokter?
-                                    </button>
-                                </h2>
-                                <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample">
-                                    <div class="accordion-body" style="color: black;">
-                                        <p style="color: black;">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu tellus
-                                            ultricies, luctus ligula id, varius elit. Aenean id auctor felis. Sed ac
-                                            neque
-                                            convallis, tincidunt est ac, cursus justo.
+                                            Layanan ParentCare dapat dilakukan baik secara online maupun offline, tergantung pada kebutuhan dan preferensi Anda. Kami dapat melakukan konsultasi secara online melalui telepon atau video call, atau Anda juga dapat datang langsung ke kantor kami untuk bertemu dengan salah satu psikolog kami secara offline.
                                         </p>
                                     </div>
                                 </div>
@@ -183,16 +132,13 @@ $row_test = mysqli_fetch_assoc($result_test);
                             <div class="accordion-item" data-aos="fade-up" data-aos-once="true" data-aos-delay="100">
                                 <h2 class="accordion-header" id="flush-headingSeven">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
-                                        Bagaimana cara membooking dokter?
+                                        Bagaimana cara mengakses layanan ParentCare?
                                     </button>
                                 </h2>
                                 <div id="flush-collapseSeven" class="accordion-collapse collapse" aria-labelledby="flush-headingSeven" data-bs-parent="#accordionFlushExample">
                                     <div class="accordion-body" style="color: black;">
                                         <p style="color: black;">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu tellus
-                                            ultricies, luctus ligula id, varius elit. Aenean id auctor felis. Sed ac
-                                            neque
-                                            convallis, tincidunt est ac, cursus justo.
+                                            Anda dapat mengakses layanan ParentCare melalui telepon atau email. Anda juga dapat mengunjungi situs web kami untuk mengetahui lebih lanjut tentang layanan yang kami tawarkan, dan untuk menghubungi kami untuk mendapatkan bantuan lebih lanjut.</p>
                                         </p>
                                     </div>
                                 </div>
@@ -200,16 +146,13 @@ $row_test = mysqli_fetch_assoc($result_test);
                             <div class="accordion-item" data-aos="fade-up" data-aos-once="true" data-aos-delay="200">
                                 <h2 class="accordion-header" id="flush-headingEight">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseEight">
-                                        Bagaimana cara membooking dokter?
+                                        Apa saja masalah yang dapat ditangani oleh layanan ParentCare?
                                     </button>
                                 </h2>
                                 <div id="flush-collapseEight" class="accordion-collapse collapse" aria-labelledby="flush-headingEight" data-bs-parent="#accordionFlushExample">
                                     <div class="accordion-body" style="color: black;">
                                         <p style="color: black;">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu tellus
-                                            ultricies, luctus ligula id, varius elit. Aenean id auctor felis. Sed ac
-                                            neque
-                                            convallis, tincidunt est ac, cursus justo.
+                                            Layanan ParentCare dapat membantu menangani masalah-masalah seperti komunikasi yang buruk antara orang tua dan anak, masalah perilaku anak, masalah keluarga, dan masalah-masalah lainnya yang sering dihadapi orang tua saat mengasuh anak-anak.
                                         </p>
                                     </div>
                                 </div>
@@ -222,63 +165,13 @@ $row_test = mysqli_fetch_assoc($result_test);
                                 </h2>
                                 <div id="flush-collapseNine" class="accordion-collapse collapse" aria-labelledby="flush-headingNine" data-bs-parent="#accordionFlushExample">
                                     <div class="accordion-body" style="color: black;">
-                                        <p style="color: black;">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu tellus
-                                            ultricies, luctus ligula id, varius elit. Aenean id auctor felis. Sed ac
-                                            neque
-                                            convallis, tincidunt est ac, cursus justo.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item" data-aos="fade-up" data-aos-once="true" data-aos-delay="100">
-                                <h2 class="accordion-header" id="flush-headingTen">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTen" aria-expanded="false" aria-controls="flush-collapseTen">
-                                        Bagaimana cara membooking dokter?
-                                    </button>
-                                </h2>
-                                <div id="flush-collapseTen" class="accordion-collapse collapse" aria-labelledby="flush-headingTen" data-bs-parent="#accordionFlushExample">
-                                    <div class="accordion-body" style="color: black;">
-                                        <p style="color: black;">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu tellus
-                                            ultricies, luctus ligula id, varius elit. Aenean id auctor felis. Sed ac
-                                            neque
-                                            convallis, tincidunt est ac, cursus justo.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item" data-aos="fade-up" data-aos-once="true" data-aos-delay="200">
-                                <h2 class="accordion-header" id="flush-headingEleven">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEleven" aria-expanded="false" aria-controls="flush-collapseEleven">
-                                        Bagaimana cara membooking dokter?
-                                    </button>
-                                </h2>
-                                <div id="flush-collapseEleven" class="accordion-collapse collapse" aria-labelledby="flush-headingEleven" data-bs-parent="#accordionFlushExample">
-                                    <div class="accordion-body" style="color: black;">
-                                        <p style="color: black;">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu tellus
-                                            ultricies, luctus ligula id, varius elit. Aenean id auctor felis. Sed ac
-                                            neque
-                                            convallis, tincidunt est ac, cursus justo.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item" data-aos="fade-up" data-aos-once="true" data-aos-delay="300">
-                                <h2 class="accordion-header" id="flush-headingTwelve">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwelve" aria-expanded="false" aria-controls="flush-collapseTwelve">
-                                        Bagaimana cara membooking dokter?
-                                    </button>
-                                </h2>
-                                <div id="flush-collapseTwelve" class="accordion-collapse collapse" aria-labelledby="flush-headingTwelve" data-bs-parent="#accordionFlushExample">
-                                    <div class="accordion-body" style="color: black;">
-                                        <p style="color: black;">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu tellus
-                                            ultricies, luctus ligula id, varius elit. Aenean id auctor felis. Sed ac
-                                            neque
-                                            convallis, tincidunt est ac, cursus justo.
-                                        </p>
+                                        <p>Silahkan ikuti langkah berikut:</p>
+                                        <ol>
+                                            <li>Silahkan buka link <a href="https://parentcare237.000webhostapp.com/pages/Transaksi/konsultasi.php">https://parentcare237.000webhostapp.com/pages/Transaksi/konsultasi.php</a></li>
+                                            <li>Pilih paket yang diinginkan, lalu next</li>
+                                            <li>Pilih bank untuk transaksi, jangan lupa transfer ke rekening ParentCare, lalu next</li>
+                                            <li>Upload bukti pembayaran, lalu finish</li>
+                                        </ol>
                                     </div>
                                 </div>
                             </div>
