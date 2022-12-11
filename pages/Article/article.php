@@ -86,12 +86,11 @@ $row_test = mysqli_fetch_assoc($result_test);
     <section class="footer mt-5">
         <div class="container">
             <div class="row">
-
                 <div class="col-12 col-md-4 col-lg-3 mt-3">
                     <div class="logo-footer">
                         <a class="navbar-brand" href="#">ParentCare.</a>
                     </div>
-                    <div class="info mt-lg-2">
+                    <div class="info mt-lg-4">
                         <div class="row">
                             <div class="col-12">
                                 <a href="" class=" infotxt">Layanan
@@ -101,14 +100,10 @@ $row_test = mysqli_fetch_assoc($result_test);
                     </div>
                     <div class="sosmed mt-lg-4">
                         <div class="row">
-                            <div class="col-4">
-                                <a href="https://wa.me/6282133635122" target="_blank" class="infotxt"><i class="fa-brands fa-whatsapp"></i></a>
-                            </div>
-                            <div class="col-4">
-                                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                            </div>
-                            <div class="col-4">
-                                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                            <div class="col-12">
+                                <a href="https://wa.me/6281393015244" target="_blank" class="infotxt"><i class="bx bxl-whatsapp pe-2"></i></a>
+                                <a href="#"><i class='bx bxl-instagram px-2'></i></a>
+                                <a href="#"><i class='bx bxl-facebook-circle ps-2'></i></a>
                             </div>
                         </div>
                     </div>
@@ -128,22 +123,22 @@ $row_test = mysqli_fetch_assoc($result_test);
                 </div>
                 <div class="col-12 col-md-4 col-lg-2">
                     <div class="info mt-4">
-                        <h3>Kerja Sama</h3>
-                        <div class="footer-list mt-lg-3">
-                            <li><a class="nav-footer" href="#">Info Kolaborasi</a></li>
-                            <li><a class="nav-footer" href="#">Mahasiswa</a></li>
-                            <li><a class="nav-footer" href="#">Komunitas</a></li>
-                            <li><a class="nav-footer" href="#">Sekolah</a></li>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-4 col-lg-2">
-                    <div class="info mt-4">
                         <h3>More</h3>
                         <div class="footer-list mt-lg-3">
                             <li><a class="nav-footer" href="#">Syarat & Ketentuan</a></li>
                             <li><a class="nav-footer" href="#">Privasi</a></li>
                             <li><a class="nav-footer" href="#">Iklan</a></li>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 col-lg-2">
+                    <div class="info mt-4">
+                        <h3>Media Sosial</h3>
+                        <div class="footer-list mt-lg-3">
+                            <li><a class="nav-footer" href="#"><img src="../../asset/image/icon/icons8-instagram-30.png" alt="Logo Instagram">
+                                    Instagram</a></li>
+                            <li><a class="nav-footer" href="#"><img src="../../asset/image/icon/icons8-facebook-30.png" alt="Logo Instagram"> Facebook</a></li>
+                            <li><a class="nav-footer" href="#"><img src="../../asset/image/icon/icons8-twitter-30.png" alt="Logo Instagram"> Twitter</a></li>
                         </div>
                     </div>
                 </div>
@@ -156,7 +151,6 @@ $row_test = mysqli_fetch_assoc($result_test);
         </div>
     </section>
     <!-- Footer -->
-
     <script src="../../scripts/fetch newsapi.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">

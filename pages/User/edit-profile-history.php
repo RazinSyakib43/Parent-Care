@@ -29,8 +29,7 @@ $rowTr = mysqli_fetch_assoc($resultTr);
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>ParentCare - Profile</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -39,9 +38,7 @@ $rowTr = mysqli_fetch_assoc($resultTr);
         <nav class="navbar navbar-expand-lg navbar-light fixed-top py-4 bgcolor" data-aos="fade-down">
             <div class="container">
                 <a class="navbar-brand" href="#">Parent<span>Care</span></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarResponsive" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                    aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
@@ -60,10 +57,8 @@ $rowTr = mysqli_fetch_assoc($resultTr);
                         </li>
                         <a class="nav-link" href="../Forum Discussion/forum.php">Discuss</a>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                <img width="40px" src="../../asset/image/user/<?php echo $row_user['foto'] ?>"
-                                    alt="Profile">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img width="40px" src="../../asset/image/user/<?php echo $row_user['foto'] ?>" alt="Profile">
 
                             </a>
                             <ul class="dropdown-menu">
@@ -98,8 +93,7 @@ $rowTr = mysqli_fetch_assoc($resultTr);
             <div class="row mt-4 question-list">
                 <div class="col-3">
                     <div class="profile">
-                        <a class="navbar-brand mb-3 titleProfile text-center"
-                            href="#"><?php echo $row_user['nama'] ?></a>
+                        <a class="navbar-brand mb-3 titleProfile text-center" href="#"><?php echo $row_user['nama'] ?></a>
                         <div class="col-12 fotoProfile">
                             <img src="../../asset/image/user/<?php echo $row_user['foto'] ?>" class="rounded-circle">
                         </div>
@@ -188,8 +182,7 @@ $rowTr = mysqli_fetch_assoc($resultTr);
                     <div class="sosmed mt-lg-4">
                         <div class="row">
                             <div class="col-12">
-                                <a href="https://wa.me/6281393015244" target="_blank" class="infotxt"><i
-                                        class="bx bxl-whatsapp pe-2"></i></a>
+                                <a href="https://wa.me/6281393015244" target="_blank" class="infotxt"><i class="bx bxl-whatsapp pe-2"></i></a>
                                 <a href="#"><i class='bx bxl-instagram px-2'></i></a>
                                 <a href="#"><i class='bx bxl-facebook-circle ps-2'></i></a>
                             </div>
@@ -223,13 +216,10 @@ $rowTr = mysqli_fetch_assoc($resultTr);
                     <div class="info mt-4">
                         <h3>Media Sosial</h3>
                         <div class="footer-list mt-lg-3">
-                            <li><a class="nav-footer" href="#"><img src="../../asset/image/icon/icons8-instagram-30.png"
-                                        alt="Logo Instagram">
+                            <li><a class="nav-footer" href="#"><img src="../../asset/image/icon/icons8-instagram-30.png" alt="Logo Instagram">
                                     Instagram</a></li>
-                            <li><a class="nav-footer" href="#"><img src="../../asset/image/icon/icons8-facebook-30.png"
-                                        alt="Logo Instagram"> Facebook</a></li>
-                            <li><a class="nav-footer" href="#"><img src="../../asset/image/icon/icons8-twitter-30.png"
-                                        alt="Logo Instagram"> Twitter</a></li>
+                            <li><a class="nav-footer" href="#"><img src="../../asset/image/icon/icons8-facebook-30.png" alt="Logo Instagram"> Facebook</a></li>
+                            <li><a class="nav-footer" href="#"><img src="../../asset/image/icon/icons8-twitter-30.png" alt="Logo Instagram"> Twitter</a></li>
                         </div>
                     </div>
                 </div>
