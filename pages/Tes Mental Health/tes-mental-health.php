@@ -65,7 +65,7 @@ $row_test = mysqli_fetch_assoc($result_test);
                     <h2 class="section-heading">Tes kesehatan mental anda</h2>
                 </div>
             </div>
-            <div class="row mt-4 question-list">
+            <div class="row mt-4 question-list" data-aos="fade-up" data-aos-once="true" data-aos-delay="100">
                 <div class="col-1"></div>
                 <div class="col-10">
                     <div class="card">
@@ -93,7 +93,7 @@ $row_test = mysqli_fetch_assoc($result_test);
             <div class="row mt-2 ">
                 <div class="col-1"></div>
                 <div class="col-10">
-                    <div class="card skor-card">
+                    <div class="card skor-card" data-aos="fade-up" data-aos-once="true" data-aos-delay="200">
                         <h2 class="section-heading text-white text-start">Skor anda adalah:</h2>
                         <div class="row">
                             <div class="col-4">
@@ -120,7 +120,7 @@ $row_test = mysqli_fetch_assoc($result_test);
             <div class="row mt-2 ">
                 <div class="col-1"></div>
                 <div class="col-10">
-                    <div class="card">
+                    <div class="card" data-aos="fade-up" data-aos-once="true" data-aos-delay="300">
                         <h2 class="section-heading text-start">Kesehatan Mental</h2>
                         <p class="mental-article">Kesehatan mental adalah seperti kepala yang tersusun rapi dari emosi, psikologi, dan interaksi sosial yang saling terkait. Dengan kesehatan mental yang baik, kita bisa berpikir jernih, merasa sejahtera, dan bertindak dengan tepat. Kesehatan mental juga membantu kita menghadapi stres, bergaul dengan orang lain, dan membuat keputusan yang bijaksana. Kesehatan mental sangat penting untuk semua usia, mulai dari anak-anak hingga dewasa. Namun jika kesehatan mental terganggu, itu bisa berdampak pada pikiran, perasaan, dan perilaku kita.</p>
                         <p class="mental-article">Kesehatan mental merupakan kondisi yang terdiri dari beragam faktor, mulai dari faktor biologis seperti genetik dan zat biologis tubuh, hingga pengalaman hidup dan riwayat keluarga. Jangan biarkan masalah kesehatan mental menguasai hidup Anda. Segera cari bantuan jika Anda merasa mengalami masalah dalam hal ini.</p>
@@ -159,6 +159,11 @@ $row_test = mysqli_fetch_assoc($result_test);
                         <p class="mental-article">Kecemasan adalah seperti pelangi setelah hujan, menghiasi hidup kita dengan perasaan waspada dan siap sedia. Namun, gangguan kecemasan adalah awan hitam yang menyelimuti pikiran kita, membuat kita takut dan cemas berlebihan. Namun tenang saja, banyak cara yang dapat kita tempuh untuk mengatasinya, sehingga kecemasan tidak lagi menghalangi kita untuk hidup produktif dan bahagia.</p>
                         <p class="mental-article">Kecemasan adalah sebuah perasaan yang membuat otot kita tegang dan membuat kita menghindar dari masalah, sedangkan ketakutan adalah perasaan yang membuat kita bertarung atau lari untuk menghindar dari bahaya.</p>
                         <p class="mental-article">Gangguan kecemasan dapat menyebabkan orang berusaha menghindari situasi yang memicu atau memperburuk gejala mereka. Prestasi kerja, tugas sekolah dan hubungan pribadi dapat terpengaruh. Secara umum, bagi seseorang yang didiagnosis dengan gangguan kecemasan, rasa takut atau cemas harus tidak sesuai dengan situasi atau usia yang tidak sesuai, juga menghambat kemampuan seseorang untuk berfungsi normal.</p>
+
+                        <h2 class="section-heading text-start">Stress</h2>
+                        <p class="mental-article">Stress merupakan sebuah perasaan yang dapat menjadi kewalahan bagi seseorang, sehingga ia merasa tidak mampu mengatasinya akibat dari tekanan yang tidak terkendali. Pada intinya, stress adalah respon tubuh seseorang terhadap tekanan yang ditimbulkan oleh suatu situasi atau peristiwa dalam kehidupan. Penyebab stress dapat bermacam-macam, tergantung pada orang yang mengalaminya, lingkungan tempat tinggal, sosial ekonomi, dan faktor genetik yang dimilikinya.</p>
+                        <p class="mental-article">Stress yang datang dari hal-hal baru atau tidak terduga, ancaman terhadap perasaan diri, atau merasa tidak memiliki kendali akan menghadirkan ciri-ciri umum yang tidak menyenangkan dalam diri kita.</p>
+                        <p class="mental-article">Stress adalah musuh yang bersembunyi di balik selimut, menyerang tanpa terlihat dan menghalangi kemampuan seseorang untuk mengendalikan situasi dan peristiwa dalam hidupnya.</p>
                     </div>
                     <div class="col-1"></div>
                 </div>
