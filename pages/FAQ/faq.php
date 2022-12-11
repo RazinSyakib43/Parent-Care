@@ -47,7 +47,7 @@ $row_test = mysqli_fetch_assoc($result_test);
                     <div class="navbar-nav ms-auto">
                         <a class="nav-link active" aria-current="page" href="../../index.php">Home</a>
                         <a class="nav-link" href="../Article/article.php">Artikel</a>
-                        <a class="nav-link" href="faq.php">FAQ</a>
+                        <a class="nav-link" href="../FAQ/faq.php">FAQ</a>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Layanan

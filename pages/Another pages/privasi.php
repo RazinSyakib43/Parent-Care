@@ -38,26 +38,26 @@ $row_test = mysqli_fetch_assoc($result_test);
     <header>
         <nav class="navbar navbar-expand-lg navbar-light fixed-top py-4 bgcolor" data-aos="fade-down">
             <div class="container-xl">
-                <a class="navbar-brand" href="index.php">Parent<span>Care</span></a>
+                <a class="navbar-brand" href="../../index.php">Parent<span>Care</span></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <div class="navbar-nav ms-auto">
-                        <a class="nav-link active" aria-current="page" href="index.php">Home</a>
-                        <a class="nav-link" href="pages/Article/article.php">Artikel</a>
-                        <a class="nav-link" href="pages/FAQ/faq.php">FAQ</a>
+                        <a class="nav-link active" aria-current="page" href="../../index.php">Home</a>
+                        <a class="nav-link" href="../Article/article.php">Artikel</a>
+                        <a class="nav-link" href="../FAQ/faq.php">FAQ</a>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Layanan
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="pages/Transaksi/konsultasi.php">Konsultasi</a></li>
-                                <li><a class="dropdown-item" href="pages/Tes Mental Health/tes-mental-health.php">Tes Kesehatan Mental</a></li>
+                                <li><a class="dropdown-item" href="../Transaksi/konsultasi.php">Konsultasi</a></li>
+                                <li><a class="dropdown-item" href="../Tes Mental Health/tes-mental-health.php">Tes Kesehatan Mental</a></li>
                             </ul>
                         </li>
-                        <a class="nav-link" href="pages/Forum Discussion/forum.php">Discuss</a>
-                        <a class="nav-login btn btn-success px-4 text-white btn-login" id="login" href="pages/login.php">Login</a>
+                        <a class="nav-link" href="../Forum Discussion/forum.php">Discuss</a>
+                        <a class="nav-login btn btn-success px-4 text-white btn-login" id="login" href="../login.php">Login</a>
                     </div>
                 </div>
             </div>

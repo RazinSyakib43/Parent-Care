@@ -39,7 +39,7 @@ $row_test = mysqli_fetch_assoc($result_test);
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-light fixed-top py-4 bgcolor" data-aos="fade-down">
-            <div class="container">
+            <div class="container-xl">
                 <a class="navbar-brand" href="../../index.php">Parent<span>Care</span></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -47,7 +47,7 @@ $row_test = mysqli_fetch_assoc($result_test);
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <div class="navbar-nav ms-auto">
                         <a class="nav-link active" aria-current="page" href="../../index.php">Home</a>
-                        <a class="nav-link" href="article.php">Artikel</a>
+                        <a class="nav-link" href="../Article/article.php">Artikel</a>
                         <a class="nav-link" href="../FAQ/faq.php">FAQ</a>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -67,7 +67,7 @@ $row_test = mysqli_fetch_assoc($result_test);
     </header>
     <!-- Article -->
     <section class="article">
-        <div class="container-xl">
+        <div class="container">
             <div class="row mt-5">
                 <div class="col-12" data-aos="fade-up" data-aos-once="true" data-aos-delay="100">
                     <h2 class="section-heading">ARTICLE</h2>

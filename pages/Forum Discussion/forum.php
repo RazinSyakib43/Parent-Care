@@ -53,11 +53,11 @@ $row_test = mysqli_fetch_assoc($result_test);
                             </a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="../Transaksi/konsultasi.php">Konsultasi</a></li>
-                                <li><a class="dropdown-item" href="../Tes Mental Health/tes-mental-health.php">Tes Minat Bakat</a></li>
+                                <li><a class="dropdown-item" href="../Tes Mental Health/tes-mental-health.php">Tes Kesehatan Mental</a></li>
                             </ul>
                         </li>
-                        <a class="nav-link" href="forum.php">Discuss</a>
-                        <a class="nav-login btn btn-success px-4 text-white btn-login" href="../login.php">Login</a>
+                        <a class="nav-link" href="../Forum Discussion/forum.php">Discuss</a>
+                        <a class="nav-login btn btn-success px-4 text-white btn-login" id="login" href="../login.php">Login</a>
                     </div>
                 </div>
             </div>

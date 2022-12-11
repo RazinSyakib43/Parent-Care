@@ -66,7 +66,7 @@ if (!$_SESSION['email'] && !$_SESSION['password'] && $_SESSION['level'] != "Admi
                                         Kesehatan Mental</a></li>
                             </ul>
                         </li>
-                        <a class="nav-link" href="pages/Forum Discussion/forum.php">Discuss</a>
+                        <a class="nav-link" href="../Forum Discussion/forum.php">Discuss</a>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
