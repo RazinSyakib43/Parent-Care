@@ -24,7 +24,7 @@ $row_test = mysqli_fetch_assoc($result_test);
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Tentang Kami | ParentCare</title>
+    <title>Hubungi Kami | ParentCare</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="../../styles/style.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -69,57 +69,26 @@ $row_test = mysqli_fetch_assoc($result_test);
         <div class="container">
             <div class="row">
                 <div class="col-12" data-aos="fade-up" data-aos-once="true">
-                    <h2 class="section-heading">Tentang Kami</h2>
-                    <p class="mental-article">ParentCare adalah sebuah platform psikologi anak dan parenting yang bertujuan untuk membantu orang tua dalam menjalankan perannya sebagai pendidik dan pengasuh anak. Kami memiliki tim yang terdiri dari psikolog anak dan parenting yang berpengalaman dan berkomitmen untuk memberikan bimbingan dan solusi yang tepat bagi orang tua dalam menghadapi berbagai masalah yang dihadapi anak-anak.
-                    </p>
-                    <p class="mental-article">Melalui ParentCare, orang tua dapat mengakses berbagai fitur yang berguna, seperti artikel-artikel bermanfaat tentang parenting, konsultasi dengan psikolog anak dan parenting, serta komunitas orang tua yang dapat saling bertukar informasi dan pengalaman.</p>
-                    <p class="mental-article">Dengan ParentCare, kami berharap dapat membantu orang tua dalam mengembangkan kemampuan parenting yang baik, sehingga anak-anak dapat tumbuh dan berkembang secara optimal. Kami percaya bahwa orang tua merupakan salah satu faktor penting dalam tumbuh kembang anak, dan dengan bantuan yang tepat, orang tua dapat menjadi pendidik dan pengasuh yang efektif bagi anak-anak mereka.</p>
+                    <h2 class="section-heading">Halaman Privasi</h2>
+                    <!-- <p class="subheading text-start"><strong>Layanan ParentCare dioperasikan oleh PT. ParentCare Indonesia. Kami sangat menghargai privasi Anda dan menjamin bahwa informasi pribadi yang Anda berikan kepada kami akan dijaga kerahasiaannya sesuai dengan ketentuan yang berlaku.</strong> </p> -->
+                    <p class="subheading text-start"><strong>Informasi yang Kami Kumpulkan</strong></p>
+                    <p class="subheading text-start text-justify">Kami hanya akan mengumpulkan informasi yang diperlukan untuk memberikan layanan terbaik bagi Anda. Informasi yang mungkin kami kumpulkan termasuk nama, alamat email, nomor telepon, dan informasi lain yang dibagikan oleh Anda selama proses konsultasi.</p>
+                    <p class="subheading text-start"><strong>Penggunaan Informasi</strong></p>
+                    <p class="subheading text-start text-justify">Informasi yang dikumpulkan hanya akan digunakan untuk keperluan internal, seperti menyediakan layanan yang Anda pesan, mengelola akun Anda, mengirimkan pemberitahuan penting, dan menangani permintaan atau pertanyaan Anda. Kami juga dapat menggunakan informasi tersebut untuk meningkatkan layanan kami dan mengembangkan produk baru.</p>
+                    <p class="subheading text-start text-justify">Kami tidak akan menjual, mengungah, atau memberikan informasi pribadi Anda kepada pihak ketiga tanpa persetujuan Anda terlebih dahulu, kecuali jika diwajibkan oleh hukum atau untuk melindungi hak-hak kami.s</p>
+                    <p class="subheading text-start"><strong>Keamanan Informasi</strong></p>
+                    <p class="subheading text-start text-justify">Kami mengambil langkah-langkah yang tepat untuk melindungi informasi pribadi Anda dari akses yang tidak sah atau penggunaan yang tidak sesuai. Namun, kami tidak dapat menjamin keamanan absolut dari informasi yang dikirim melalui internet, sehingga Anda harus memastikan bahwa informasi yang diberikan kepada kami adalah benar dan tidak mengandung risiko.</p>
+                    <p class="subheading text-start"><strong>Perubahan Kebijakan Privasi</strong></p>
+                    <p class="subheading text-start text-justify">Kami berhak untuk mengubah kebijakan privasi ini sewaktu-waktu untuk menyesuaikan dengan perubahan hukum atau perkembangan layanan kami. Perubahan tersebut akan diumumkan di halaman ini, sehingga Anda dapat memeriksa kebijakan privasi yang berlaku secara berkala.</p>
+                    <p class="subheading text-start"><strong>Kontak</strong></p>
+                    <p class="subheading text-start text-justify">Jika Anda memiliki pertanyaan atau keluhan tentang kebijakan privasi kami, atau ingin mengajukan permintaan akses, perbaikan, atau penghapusan informasi pribadi Anda, silakan hubungi kami melalui email di parentcare.capstone@gmail.com atau telepon di 0800-100-0000.</p>
+                    <p class="subheading text-start text-justify">Kami berusaha untuk memberikan layanan terbaik bagi orang tua dan anak-anak mereka, dan kami senantiasa berupaya untuk menjaga kerahasiaan informasi pribadi Anda. Kami berharap dapat terus mendapatkan kepercayaan Anda untuk menggunakan layanan ParentCare.</p>
+                    <p class="subheading text-start text-justify">Jika Anda memiliki pertanyaan atau keluhan tentang kebijakan privasi kami, atau ingin mengajukan permintaan akses, perbaikan, atau penghapusan informasi pribadi Anda, silakan hubungi kami melalui email di parentcare.capstone@gmail.com atau telepon di 0800-100-0000. Kami akan senang untuk membantu Anda dan menjawab pertanyaan Anda seputar kebijakan privasi kami.</p>
+                    <p class="subheading text-start text-justify">Terima kasih telah mempercayakan layanan ParentCare untuk membantu mengatasi masalah-masalah yang dihadapi saat mengasuh anak-anak. Kami berharap dapat terus memberikan layanan terbaik bagi Anda dan keluarga Anda.</p>
                 </div>
             </div>
         </div>
     </section>
-    <!-- Developer -->
-    <section class="psychologists mt-5" id="psychologists">
-        <div class="container">
-            <div class="row">
-                <div class="col-12" data-aos="fade-up" data-aos-once="true">
-                    <h2 class="section-heading">Meet Our Developer Team</h2>
-                    <p class="subheading">Anggota Capstone C22-237
-                    </p>
-                </div>
-            </div>
-            <div class="row mt-4">
-                <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-once="true" data-aos-delay="100">
-                    <div class="card">
-                        <img src="../../asset/image/developer/Suryani.png" alt="" class="foto-developer">
-                        <h5 class="tittle-ptoduct mt-3">Suryani Lestari (F299Y0780)</h5>
-                        <br>
-                        <div class="tittle-card mt-1">
-                            <p class="price m-0">Back-End Developer</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-once="true" data-aos-delay="100">
-                    <div class="card">
-                        <img src="../../asset/image/developer/Dolly.png" alt="" class="foto-developer">
-                        <h5 class="tittle-ptoduct mt-3">Dolly Ranu Wicaksana Simamora (F183X0328)</h5>
-                        <div class="tittle-card mt-1">
-                            <p class="price m-0">UI/UX Designer & Front-End Developer</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-once="true" data-aos-delay="100">
-                    <div class="card">
-                        <img src="../../asset/image/developer/Razin.png" alt="" class="foto-developer">
-                        <h5 class="tittle-ptoduct mt-3">Muhammad Razin Syakib (F175X0291)</h5>
-                        <div class="tittle-card mt-1">
-                            <p class="price m-0">Front-End Developer & UI/UX Designer</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    </section>
-    <!-- Developer -->
     <!-- Footer -->
     <section class="footer mt-5">
         <div class="container">

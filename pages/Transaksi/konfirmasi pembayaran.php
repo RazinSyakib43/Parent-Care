@@ -180,7 +180,7 @@ if (!$_SESSION['email'] && !$_SESSION['password'] && $_SESSION['level'] != "Admi
     <section class="footer mt-5">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-md-4 col-lg-3 mt-3">
+                <div class="col-12 col-lg-3 mt-3">
                     <div class="logo-footer">
                         <a class="navbar-brand" href="#">ParentCare.</a>
                     </div>
@@ -192,27 +192,16 @@ if (!$_SESSION['email'] && !$_SESSION['password'] && $_SESSION['level'] != "Admi
                             </div>
                         </div>
                     </div>
-                    <div class="sosmed mt-lg-4">
-                        <div class="row">
-                            <div class="col-12">
-                                <a href="https://wa.me/6281393015244" target="_blank" class="infotxt"><i
-                                        class="bx bxl-whatsapp pe-2"></i></a>
-                                <a href="#"><i class='bx bxl-instagram px-2'></i></a>
-                                <a href="#"><i class='bx bxl-facebook-circle ps-2'></i></a>
-                            </div>
-                        </div>
-                    </div>
                 </div>
-                <div class="col-12 col-md-4 col-lg-1">
+                <div class="col-lg-1">
 
                 </div>
                 <div class="col-12 col-md-4 col-lg-2">
                     <div class="info mt-4">
                         <h3>About ParentCare</h3>
                         <div class="footer-list mt-lg-3">
-                            <li><a class="nav-footer" href="#">Tentang Kami</a></li>
-                            <li><a class="nav-footer" href="#">Hubungi Kami</a></li>
-                            <li><a class="nav-footer" href="#">ParentCare Happy</a></li>
+                            <li><a class="nav-footer" href="../Another pages/Tentang kami.php">Tentang Kami</a></li>
+                            <li><a class="nav-footer" href="../Another pages/Hubungi kami.php">Hubungi Kami</a></li>
                         </div>
                     </div>
                 </div>
@@ -220,9 +209,9 @@ if (!$_SESSION['email'] && !$_SESSION['password'] && $_SESSION['level'] != "Admi
                     <div class="info mt-4">
                         <h3>More</h3>
                         <div class="footer-list mt-lg-3">
-                            <li><a class="nav-footer" href="#">Syarat & Ketentuan</a></li>
-                            <li><a class="nav-footer" href="#">Privasi</a></li>
-                            <li><a class="nav-footer" href="#">Iklan</a></li>
+                            <li><a class="nav-footer" href="../Another pages/syarat dan ketentuan.php">Syarat & Ketentuan</a></li>
+                            <li><a class="nav-footer" href="../Another pages/privasi.php">Privasi</a></li>
+                            <li><a class="nav-footer" href="../FAQ/faq.php">FAQ</a></li>
                         </div>
                     </div>
                 </div>
@@ -230,13 +219,10 @@ if (!$_SESSION['email'] && !$_SESSION['password'] && $_SESSION['level'] != "Admi
                     <div class="info mt-4">
                         <h3>Media Sosial</h3>
                         <div class="footer-list mt-lg-3">
-                            <li><a class="nav-footer" href="#"><img src="../../asset/image/icon/icons8-instagram-30.png"
-                                        alt="Logo Instagram">
+                            <li><a class="nav-footer" href="#"><img src="../../asset/image/icon/icons8-instagram-30.png" alt="Logo Instagram">
                                     Instagram</a></li>
-                            <li><a class="nav-footer" href="#"><img src="../../asset/image/icon/icons8-facebook-30.png"
-                                        alt="Logo Instagram"> Facebook</a></li>
-                            <li><a class="nav-footer" href="#"><img src="../../asset/image/icon/icons8-twitter-30.png"
-                                        alt="Logo Instagram"> Twitter</a></li>
+                            <li><a class="nav-footer" href="#"><img src="../../asset/image/icon/icons8-facebook-30.png" alt="Logo Instagram"> Facebook</a></li>
+                            <li><a class="nav-footer" href="#"><img src="../../asset/image/icon/icons8-twitter-30.png" alt="Logo Instagram"> Twitter</a></li>
                         </div>
                     </div>
                 </div>

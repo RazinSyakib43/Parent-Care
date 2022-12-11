@@ -24,7 +24,7 @@ $row_test = mysqli_fetch_assoc($result_test);
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>ParentCare</title>
+    <title>Syarat dan Ketentuan | ParentCare</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="../../styles/style.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -91,7 +91,7 @@ $row_test = mysqli_fetch_assoc($result_test);
     <section class="footer mt-5">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-md-4 col-lg-3 mt-3">
+                <div class="col-12 col-lg-3 mt-3">
                     <div class="logo-footer">
                         <a class="navbar-brand" href="#">ParentCare.</a>
                     </div>
@@ -103,26 +103,16 @@ $row_test = mysqli_fetch_assoc($result_test);
                             </div>
                         </div>
                     </div>
-                    <div class="sosmed mt-lg-4">
-                        <div class="row">
-                            <div class="col-12">
-                                <a href="https://wa.me/6281393015244" target="_blank" class="infotxt"><i class="bx bxl-whatsapp pe-2"></i></a>
-                                <a href="#"><i class='bx bxl-instagram px-2'></i></a>
-                                <a href="#"><i class='bx bxl-facebook-circle ps-2'></i></a>
-                            </div>
-                        </div>
-                    </div>
                 </div>
-                <div class="col-12 col-md-4 col-lg-1">
+                <div class="col-lg-1">
 
                 </div>
                 <div class="col-12 col-md-4 col-lg-2">
                     <div class="info mt-4">
                         <h3>About ParentCare</h3>
                         <div class="footer-list mt-lg-3">
-                            <li><a class="nav-footer" href="#">Tentang Kami</a></li>
-                            <li><a class="nav-footer" href="#">Hubungi Kami</a></li>
-                            <li><a class="nav-footer" href="#">ParentCare Happy</a></li>
+                            <li><a class="nav-footer" href="../Another pages/Tentang kami.php">Tentang Kami</a></li>
+                            <li><a class="nav-footer" href="../Another pages/Hubungi kami.php">Hubungi Kami</a></li>
                         </div>
                     </div>
                 </div>
@@ -130,9 +120,9 @@ $row_test = mysqli_fetch_assoc($result_test);
                     <div class="info mt-4">
                         <h3>More</h3>
                         <div class="footer-list mt-lg-3">
-                            <li><a class="nav-footer" href="#">Syarat & Ketentuan</a></li>
-                            <li><a class="nav-footer" href="#">Privasi</a></li>
-                            <li><a class="nav-footer" href="#">Iklan</a></li>
+                            <li><a class="nav-footer" href="../Another pages/syarat dan ketentuan.php">Syarat & Ketentuan</a></li>
+                            <li><a class="nav-footer" href="../Another pages/privasi.php">Privasi</a></li>
+                            <li><a class="nav-footer" href="../FAQ/faq.php">FAQ</a></li>
                         </div>
                     </div>
                 </div>
