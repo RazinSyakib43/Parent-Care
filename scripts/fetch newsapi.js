@@ -32,19 +32,17 @@ form.addEventListener('submit', (event) => {
     let filteredNews = null;
     const inputSearch = event.srcElement[0];
 
-    const DATAArray = Array.from(DATA.data.posts);
-    for (const article of DATAArray) {
-        filteredNews = DATAArray.filter((item) => {
-            return item.data.title === inputSearch.value;
+    // console.log(event);
+    for (const article of DATA.data.posts) {
+        filteredNews = DATA.data.posts.filter((item) => {
+            return item.title === inputSearch.value;
         });
     }
-
     newsContainer.innerHTML = '';
     for (const article of filteredNews) {
         newsContainer.innerHTML += templateNews(article);
     }
 });
-
 
 function templateNews(data) {
     let image = '';
