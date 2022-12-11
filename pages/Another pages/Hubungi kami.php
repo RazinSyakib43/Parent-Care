@@ -69,21 +69,26 @@ $row_test = mysqli_fetch_assoc($result_test);
         <div class="container">
             <div class="row">
                 <div class="col-12" data-aos="fade-up" data-aos-once="true">
-                    <h2 class="section-heading">Halaman Privasi</h2>
-                    <!-- <p class="subheading text-start"><strong>Layanan ParentCare dioperasikan oleh PT. ParentCare Indonesia. Kami sangat menghargai privasi Anda dan menjamin bahwa informasi pribadi yang Anda berikan kepada kami akan dijaga kerahasiaannya sesuai dengan ketentuan yang berlaku.</strong> </p> -->
-                    <p class="subheading text-start"><strong>Informasi yang Kami Kumpulkan</strong></p>
-                    <p class="subheading text-start text-justify">Kami hanya akan mengumpulkan informasi yang diperlukan untuk memberikan layanan terbaik bagi Anda. Informasi yang mungkin kami kumpulkan termasuk nama, alamat email, nomor telepon, dan informasi lain yang dibagikan oleh Anda selama proses konsultasi.</p>
-                    <p class="subheading text-start"><strong>Penggunaan Informasi</strong></p>
-                    <p class="subheading text-start text-justify">Informasi yang dikumpulkan hanya akan digunakan untuk keperluan internal, seperti menyediakan layanan yang Anda pesan, mengelola akun Anda, mengirimkan pemberitahuan penting, dan menangani permintaan atau pertanyaan Anda. Kami juga dapat menggunakan informasi tersebut untuk meningkatkan layanan kami dan mengembangkan produk baru.</p>
-                    <p class="subheading text-start text-justify">Kami tidak akan menjual, mengungah, atau memberikan informasi pribadi Anda kepada pihak ketiga tanpa persetujuan Anda terlebih dahulu, kecuali jika diwajibkan oleh hukum atau untuk melindungi hak-hak kami.s</p>
-                    <p class="subheading text-start"><strong>Keamanan Informasi</strong></p>
-                    <p class="subheading text-start text-justify">Kami mengambil langkah-langkah yang tepat untuk melindungi informasi pribadi Anda dari akses yang tidak sah atau penggunaan yang tidak sesuai. Namun, kami tidak dapat menjamin keamanan absolut dari informasi yang dikirim melalui internet, sehingga Anda harus memastikan bahwa informasi yang diberikan kepada kami adalah benar dan tidak mengandung risiko.</p>
-                    <p class="subheading text-start"><strong>Perubahan Kebijakan Privasi</strong></p>
-                    <p class="subheading text-start text-justify">Kami berhak untuk mengubah kebijakan privasi ini sewaktu-waktu untuk menyesuaikan dengan perubahan hukum atau perkembangan layanan kami. Perubahan tersebut akan diumumkan di halaman ini, sehingga Anda dapat memeriksa kebijakan privasi yang berlaku secara berkala.</p>
-                    <p class="subheading text-start"><strong>Kontak</strong></p>
-                    <p class="subheading text-start text-justify">Jika Anda memiliki pertanyaan atau keluhan tentang kebijakan privasi kami, atau ingin mengajukan permintaan akses, perbaikan, atau penghapusan informasi pribadi Anda, silakan hubungi kami melalui email di parentcare.capstone@gmail.com atau telepon di 0800-100-0000.</p>
-                    <p class="subheading text-start text-justify">Kami berusaha untuk memberikan layanan terbaik bagi orang tua dan anak-anak mereka, dan kami senantiasa berupaya untuk menjaga kerahasiaan informasi pribadi Anda. Kami berharap dapat terus mendapatkan kepercayaan Anda untuk menggunakan layanan ParentCare.</p>
-                    <p class="subheading text-start text-justify">Jika Anda memiliki pertanyaan atau keluhan tentang kebijakan privasi kami, atau ingin mengajukan permintaan akses, perbaikan, atau penghapusan informasi pribadi Anda, silakan hubungi kami melalui email di parentcare.capstone@gmail.com atau telepon di 0800-100-0000. Kami akan senang untuk membantu Anda dan menjawab pertanyaan Anda seputar kebijakan privasi kami.</p>
+                    <h2 class="section-heading">Hubungi Kami</h2>
+                    <p class="subheading text-start text-justify">Terima kasih telah mengunjungi halaman Hubungi Kami di ParentCare. Kami adalah layanan psikologi anak dan parenting yang siap membantu orang tua mengatasi masalah-masalah yang dihadapi saat mengasuh anak-anak.</p>
+                    <p class="subheading text-start text-justify">Jika Anda memiliki pertanyaan, keluhan, atau saran untuk layanan kami, silakan hubungi kami melalui salah satu kontak di bawah ini:</p>
+                    <p class="subheading text-start text-justify">
+                    <ul>
+                        <li>
+                            <p class="subheading text-start text-justify">Email: parentcare.capstone@gmail.com</p>
+                        </li>
+                        <li>
+                            <p class="subheading text-start text-justify">Telepon: 0800-100-0000 (panggilan gratis)</p>
+                        </li>
+                        <li>
+                            <p class="subheading text-start text-justify">WhatsApp: 0812-345-6789</p>
+                        </li>
+                        <li>
+                            <p class="subheading text-start text-justify">Instagram: @parentcareid</p>
+                        </li>
+                    </ul>
+                    </p>
+                    <p class="subheading text-start text-justify">Kami akan segera menanggapi permintaan Anda dan membantu menjawab pertanyaan Anda seputar layanan kami. Kami berusaha untuk memastikan bahwa orang tua dapat dengan mudah menghubungi kami dan mendapatkan bantuan yang diperlukan.</p>
                     <p class="subheading text-start text-justify">Terima kasih telah mempercayakan layanan ParentCare untuk membantu mengatasi masalah-masalah yang dihadapi saat mengasuh anak-anak. Kami berharap dapat terus memberikan layanan terbaik bagi Anda dan keluarga Anda.</p>
                 </div>
             </div>
