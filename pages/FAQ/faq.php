@@ -36,7 +36,7 @@ $row_test = mysqli_fetch_assoc($result_test);
 </head>
 
 <body>
-<header>
+    <header>
         <nav class="navbar navbar-expand-lg navbar-light fixed-top py-4 bgcolor" data-aos="fade-down">
             <div class="container">
                 <a class="navbar-brand" href="../../index.php">Parent<span>Care</span></a>
@@ -74,25 +74,26 @@ $row_test = mysqli_fetch_assoc($result_test);
                 </div>
                 <div class="accordion accordion-flush" id="accordionFlushExample">
                     <div class="row">
-                        <div class="col-6">
+                        <div class="col-12 col-lg-6">
                             <div class="accordion-item" data-aos="fade-up" data-aos-once="true" data-aos-delay="100">
                                 <h2 class="accordion-header" id="flush-headingOne">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
                                         Bagaimana cara membooking dokter?
                                     </button>
                                 </h2>
-                                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                                    <div class="accordion-body" style="color: black;">
-                                        <p style="color: black;">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu tellus
-                                            ultricies, luctus ligula id, varius elit. Aenean id auctor felis. Sed ac
-                                            neque
-                                            convallis, tincidunt est ac, cursus justo.
-                                        </p>
+                                <div id="flush-collapseOne" class="accordion-collapse collapse col-12" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body text-wrap">
+                                        <p>Silahkan ikuti langkah berikut:</p>
+                                        <ol>
+                                            <li>Silahkan buka link <a href="https://parentcare237.000webhostapp.com/pages/Transaksi/konsultasi.php">https://parentcare237.000webhostapp.com/pages/Transaksi/konsultasi.php</a></li>
+                                            <li>Pilih paket yang diinginkan, lalu next</li>
+                                            <li>Pilih bank untuk transaksi, jangan lupa transfer ke rekening ParentCare, lalu next</li>
+                                            <li>Upload bukti pembayaran, lalu finish</li>
+                                        </ol>
                                     </div>
                                 </div>
                             </div>
-                            <div class="accordion-item" data-aos="fade-up" data-aos-once="true" data-aos-delay="200">
+                            <div class=" accordion-item" data-aos="fade-up" data-aos-once="true" data-aos-delay="200">
                                 <h2 class="accordion-header" id="flush-headingTwo">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
                                         Bagaimana cara membooking dokter?
@@ -178,7 +179,7 @@ $row_test = mysqli_fetch_assoc($result_test);
                                 </div>
                             </div>
                         </div>
-                        <div class="col-6">
+                        <div class="col-12 col-lg-6">
                             <div class="accordion-item" data-aos="fade-up" data-aos-once="true" data-aos-delay="100">
                                 <h2 class="accordion-header" id="flush-headingSeven">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
