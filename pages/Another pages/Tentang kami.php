@@ -91,8 +91,8 @@ $row_test = mysqli_fetch_assoc($result_test);
             <div class="row mt-4">
                 <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-once="true" data-aos-delay="100">
                     <div class="card">
-                        <img src="../../asset/image/developer/Suryani.png" alt="">
-                        <h5 class="tittle-ptoduct mt-3">Suryani Lestari</h5>
+                        <img src="../../asset/image/developer/Suryani.png" alt="" class="foto-developer">
+                        <h5 class="tittle-ptoduct mt-3">Suryani Lestari (F299Y0780)</h5>
                         <br>
                         <div class="tittle-card mt-1">
                             <p class="price m-0">Back-End Developer</p>
@@ -101,20 +101,19 @@ $row_test = mysqli_fetch_assoc($result_test);
                 </div>
                 <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-once="true" data-aos-delay="100">
                     <div class="card">
-                        <img src="../../asset/image/developer/Razin.png" alt="">
-                        <h5 class="tittle-ptoduct mt-3">Muhammad Razin Syakib</h5>
-                        <br>
+                        <img src="../../asset/image/developer/Dolly.png" alt="" class="foto-developer">
+                        <h5 class="tittle-ptoduct mt-3">Dolly Ranu Wicaksana Simamora (F183X0328)</h5>
                         <div class="tittle-card mt-1">
-                            <p class="price m-0">Front-End Developer & UI/UX Designer</p>
+                            <p class="price m-0">UI/UX Designer & Front-End Developer</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-once="true" data-aos-delay="100">
                     <div class="card">
-                        <img src="../../asset/image/developer/Suryani.png" alt="">
-                        <h5 class="tittle-ptoduct mt-3">Dolly Ranu Wicaksana Simamora</h5>
+                        <img src="../../asset/image/developer/Razin.png" alt="" class="foto-developer">
+                        <h5 class="tittle-ptoduct mt-3">Muhammad Razin Syakib (F175X0291)</h5>
                         <div class="tittle-card mt-1">
-                            <p class="price m-0">UI/UX Designer & Front-End Developer</p>
+                            <p class="price m-0">Front-End Developer & UI/UX Designer</p>
                         </div>
                     </div>
                 </div>

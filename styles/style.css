@@ -421,3 +421,7 @@ input[type="radio"] {
 .tentang-kami {
     padding-top: 160px;
 }
+
+.foto-developer{
+    border-radius: 15px;
+}
