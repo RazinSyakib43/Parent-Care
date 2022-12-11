@@ -25,6 +25,8 @@ $row_user = mysqli_fetch_assoc($result_user);
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <!-- meta dicoding -->
+    <meta name="dicoding:email" content="muhammadrazin14@gmail.com">
 
     <title>Account - ParentCare</title>
     <meta content="" name="description">
