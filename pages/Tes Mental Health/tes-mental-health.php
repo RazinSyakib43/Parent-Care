@@ -94,7 +94,7 @@ $row_test = mysqli_fetch_assoc($result_test);
                 <div class="col-1"></div>
                 <div class="col-10">
                     <div class="card skor-card">
-                        <h2 class="section-heading text-white">Skor anda adalah:</h2>
+                        <h2 class="section-heading text-white text-start">Skor anda adalah:</h2>
                         <div class="row">
                             <div class="col-4">
                                 <div class="sub-skor-card">
@@ -117,7 +117,18 @@ $row_test = mysqli_fetch_assoc($result_test);
                 </div>
                 <div class=" col-1"></div>
             </div>
-        </div>
+            <div class="row mt-2 ">
+                <div class="col-1"></div>
+                <div class="col-10">
+                    <div class="card">
+                        <h2 class="section-heading text-start">Kesehatan Mental</h2>
+                        <p>Kesehatan mental mencakup kesejahteraan emosional, psikologis, dan sosial. Hal ini mempengaruhi cara seseorang berpikir, merasa, dan bertindak. Hal ini juga membantu menentukan bagaimana kita menangani stres, bagaimana berhubungan dengan orang lain, dan bagaimana seseorang membuat pilihan. Kesehatan mental sangatlah penting di setiap tahap kehidupan, mulai dari masa kanak-kanak dan remaja hingga dewasa. Kesehatan mental yang terganggu dapat mempengaruhi pemikiran, suasana hati, dan perilaku seseorang.</p>
+                        <p>Banyak faktor yang berkontribusi terhadap masalah kesehatan mental, termasuk faktor biologis (genetik dan zat biologis tubuh), pengalaman hidup, juga Riwayat keluarga. Jika anda merasa mengalami masalah dalam Kesehatan mental, segera cari bantuan.</p>
+                        <h2 class="section-heading text-start">Tanda-tanda mungkin seseorang mengalami gangguan Kesehatan mental</h2>
+                    </div>
+                </div>
+                <div class="col-1"></div>
+            </div>
     </section>
     <!-- Footer -->
     <section class="footer mt-5">

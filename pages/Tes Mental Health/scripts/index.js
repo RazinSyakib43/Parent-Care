@@ -50,24 +50,57 @@ function countAnswer() {
 
         // Jika hasil "Normal"
         if(countDepresi >=2 && countDepresi <= 14 ){
-            document.getElementById("score-stress").innerHTML = countDepresi + "Normal (Tetap jaga kesehatan mental anda)";
+            document.getElementById("score-stress").innerHTML = countDepresi + "<br> Normal (Tetap jaga kesehatan mental anda)";
         }
         if(countCemas >=2 && countCemas <= 14 ){
-            document.getElementById("score-cemas").innerHTML = countCemas + "Normal (Tetap jaga kesehatan mental anda)";
+            document.getElementById("score-cemas").innerHTML = countCemas + "<br> Normal (Tetap jaga kesehatan mental anda)";
         }
         if(countStress >=2 && countStress <= 14 ){
-            document.getElementById("score-depresi").innerHTML = countStress + "Normal (Tetap jaga kesehatan mental anda)";
+            document.getElementById("score-depresi").innerHTML = countStress + "<br> Normal (Tetap jaga kesehatan mental anda)";
         }
 
         // Jika hasil "Ringan"
         if(countDepresi >=16 && countDepresi <= 18 ){
-            document.getElementById("score-stress").innerHTML = countDepresi + "Ringan (Tetap jaga kesehatan mental anda)";
+            document.getElementById("score-stress").innerHTML = countDepresi + "<br> Ringan (Tetap jaga kesehatan mental anda)";
         }
         if(countCemas >=16 && countCemas <= 18 ){
-            document.getElementById("score-cemas").innerHTML = countCemas + "Ringan (Tetap jaga kesehatan mental anda)";
+            document.getElementById("score-cemas").innerHTML = countCemas + "<br> Ringan (Tetap jaga kesehatan mental anda)";
         }
         if(countStress >=16 && countStress <= 18 ){
-            document.getElementById("score-depresi").innerHTML = countStress + "Ringan (Tetap jaga kesehatan mental anda)";
+            document.getElementById("score-depresi").innerHTML = countStress + "<br> Ringan (Tetap jaga kesehatan mental anda)";
+        }
+
+        // Jika hasil "Sedang"
+        if(countDepresi >=20 && countDepresi <= 24 ){
+            document.getElementById("score-stress").innerHTML = countDepresi + "<br> Sedang (Kami sarankan anda untuk berkonsultasi dengan tenaga kesehatan profesional untuk bantuan lebih lanjut)";
+        }
+        if(countCemas >=20 && countCemas <= 24 ){
+            document.getElementById("score-cemas").innerHTML = countCemas + "<br> Sedang (Kami sarankan anda untuk berkonsultasi dengan tenaga kesehatan profesional untuk bantuan lebih lanjut)";
+        }
+        if(countStress >=20 && countStress <= 24 ){
+            document.getElementById("score-depresi").innerHTML = countStress + "<br> Sedang (Kami sarankan anda untuk berkonsultasi dengan tenaga kesehatan profesional untuk bantuan lebih lanjut)";
+        }
+
+        // Jika hasil "Berat"
+        if(countDepresi >=26 && countDepresi <= 32 ){
+            document.getElementById("score-stress").innerHTML = countDepresi + "<br> Berat (Kami sarankan anda untuk berkonsultasi dengan tenaga kesehatan profesional untuk bantuan lebih lanjut)";
+        }
+        if(countCemas >=26 && countCemas <= 32 ){
+            document.getElementById("score-cemas").innerHTML = countCemas + "<br> Berat (Kami sarankan anda untuk berkonsultasi dengan tenaga kesehatan profesional untuk bantuan lebih lanjut)";
+        }
+        if(countStress >=26 && countStress <= 32 ){
+            document.getElementById("score-depresi").innerHTML = countStress + "<br> Berat (Kami sarankan anda untuk berkonsultasi dengan tenaga kesehatan profesional untuk bantuan lebih lanjut)";
+        }
+
+        // Jika hasil "Sangat Berat"
+        if(countDepresi >=34 && countDepresi <= 42 ){
+            document.getElementById("score-stress").innerHTML = countDepresi + "<br> Sangat Berat (Kami sarankan anda untuk berkonsultasi dengan tenaga kesehatan profesional untuk bantuan lebih lanjut)";
+        }
+        if(countCemas >=34 && countCemas <= 42 ){
+            document.getElementById("score-cemas").innerHTML = countCemas + "<br> Sangat Berat (Kami sarankan anda untuk berkonsultasi dengan tenaga kesehatan profesional untuk bantuan lebih lanjut)";
+        }
+        if(countStress >=34 && countStress <= 42 ){
+            document.getElementById("score-depresi").innerHTML = countStress + "<br> Sangat Berat (Kami sarankan anda untuk berkonsultasi dengan tenaga kesehatan profesional untuk bantuan lebih lanjut)";
         }
     }
     generate(i);
