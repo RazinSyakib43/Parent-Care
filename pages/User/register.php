@@ -59,7 +59,7 @@ require('../../koneksi.php');
                                     name="register"></div>
                             <p class="mt-4 text-sm text-center">
                                 Sudah punya akun?
-                                <a href="../pages/login.php"
+                                <a href="../login.php"
                                     class="text-primary text-gradient font-weight-bold">Login</a>
                             </p>
                         </div>
