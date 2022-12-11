@@ -33,7 +33,6 @@ form.addEventListener('submit', (event) => {
     const inputSearch = event.srcElement[0];
 
     const DATAArray = Array.from(DATA.data.posts);
-    // console.log(event);
     for (const article of DATAArray) {
         filteredNews = DATAArray.filter((item) => {
             return item.data.title === inputSearch.value;
@@ -45,6 +44,7 @@ form.addEventListener('submit', (event) => {
         newsContainer.innerHTML += templateNews(article);
     }
 });
+
 
 function templateNews(data) {
     let image = '';
