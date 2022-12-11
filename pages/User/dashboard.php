@@ -43,8 +43,7 @@ $row_user = mysqli_fetch_assoc($result_user);
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>ParentCare</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="../../styles/style.css">
 </head>
 
@@ -53,9 +52,7 @@ $row_user = mysqli_fetch_assoc($result_user);
         <nav class="navbar navbar-expand-lg navbar-light fixed-top py-4 bgcolor" data-aos="fade-down">
             <div class="container-xl">
                 <a class="navbar-brand" href="#">Parent<span>Care</span></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarResponsive" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                    aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
@@ -74,10 +71,8 @@ $row_user = mysqli_fetch_assoc($result_user);
                         </li>
                         <a class="nav-link" href="pages/Forum Discussion/forum.php">Discuss</a>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                <img width="40px" src="../../asset/image/user/<?php echo $row_user['foto'] ?>"
-                                    alt="Profile">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img width="40px" src="../../asset/image/user/<?php echo $row_user['foto'] ?>" alt="Profile">
 
                             </a>
                             <ul class="dropdown-menu">
@@ -189,21 +184,13 @@ $row_user = mysqli_fetch_assoc($result_user);
                 </div>
             </div>
             <div class="row">
-                <div class="col-12 col-md-6 col-lg-3 mt-4" data-aos="fade-up" data-aos-once="true" data-aos-delay="100">
-                    <div class="card">
-                        <img src="../../asset/image/Hero/Rectangle 24.png" alt="">
-                        <p class="article-categories">TIPS</p>
-                        <a href="#">
-                            <h6>10 faktor penyebab kekerasan pada anak</h6>
-                        </a>
-                        <p class="article-time">11 July 2022</p>
-                    </div>
+                <div id="news-container" class="row" data-aos="fade-up" data-aos-once="true" data-aos-delay="200">
                 </div>
             </div>
             <div class="row">
                 <div class="col-12 see-more" data-aos="fade-up" data-aos-once="true" data-aos-delay="100">
                     <div class="btn-detail mt-5 text-center">
-                        <a href="article1.html"><button type="button" class="btn btn-second">More
+                        <a href="pages/Article/article.php"><button type="button" class="btn btn-second">More
                                 Article</button></a>
                     </div>
                 </div>
@@ -276,8 +263,7 @@ $row_user = mysqli_fetch_assoc($result_user);
                     <div class="sosmed mt-lg-4">
                         <div class="row">
                             <div class="col-12">
-                                <a href="https://wa.me/6281393015244" target="_blank" class="infotxt"><i
-                                        class="bx bxl-whatsapp pe-2"></i></a>
+                                <a href="https://wa.me/6281393015244" target="_blank" class="infotxt"><i class="bx bxl-whatsapp pe-2"></i></a>
                                 <a href="#"><i class='bx bxl-instagram px-2'></i></a>
                                 <a href="#"><i class='bx bxl-facebook-circle ps-2'></i></a>
                             </div>
@@ -311,13 +297,10 @@ $row_user = mysqli_fetch_assoc($result_user);
                     <div class="info mt-4">
                         <h3>Media Sosial</h3>
                         <div class="footer-list mt-lg-3">
-                            <li><a class="nav-footer" href="#"><img src="../../asset/image/icon/icons8-instagram-30.png"
-                                        alt="Logo Instagram">
+                            <li><a class="nav-footer" href="#"><img src="../../asset/image/icon/icons8-instagram-30.png" alt="Logo Instagram">
                                     Instagram</a></li>
-                            <li><a class="nav-footer" href="#"><img src="../../asset/image/icon/icons8-facebook-30.png"
-                                        alt="Logo Instagram"> Facebook</a></li>
-                            <li><a class="nav-footer" href="#"><img src="../../asset/image/icon/icons8-twitter-30.png"
-                                        alt="Logo Instagram"> Twitter</a></li>
+                            <li><a class="nav-footer" href="#"><img src="../../asset/image/icon/icons8-facebook-30.png" alt="Logo Instagram"> Facebook</a></li>
+                            <li><a class="nav-footer" href="#"><img src="../../asset/image/icon/icons8-twitter-30.png" alt="Logo Instagram"> Twitter</a></li>
                         </div>
                     </div>
                 </div>
@@ -330,9 +313,9 @@ $row_user = mysqli_fetch_assoc($result_user);
         </div>
     </section>
     <!-- Footer -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
     </script>
+    <script src="../../scripts/fetch news API index.js"></script>
 </body>
 
 </html>
