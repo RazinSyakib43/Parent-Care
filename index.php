@@ -32,6 +32,8 @@ $row_test = mysqli_fetch_assoc($result_test);
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500;700&family=Poppins&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -237,7 +239,6 @@ $row_test = mysqli_fetch_assoc($result_test);
                         <div class="footer-list mt-lg-3">
                             <li><a class="nav-footer" href="#">Tentang Kami</a></li>
                             <li><a class="nav-footer" href="#">Hubungi Kami</a></li>
-                            <li><a class="nav-footer" href="#">ParentCare Happy</a></li>
                         </div>
                     </div>
                 </div>
@@ -255,10 +256,10 @@ $row_test = mysqli_fetch_assoc($result_test);
                     <div class="info mt-4">
                         <h3>Media Sosial</h3>
                         <div class="footer-list mt-lg-3">
-                            <li><a class="nav-footer" href="#"><img src="../../asset/image/icon/icons8-instagram-30.png" alt="Logo Instagram">
+                            <li><a class="nav-footer" href="#"><img src="asset/image/icon/icons8-instagram-30.png" alt="Logo Instagram">
                                     Instagram</a></li>
-                            <li><a class="nav-footer" href="#"><img src="../../asset/image/icon/icons8-facebook-30.png" alt="Logo Instagram"> Facebook</a></li>
-                            <li><a class="nav-footer" href="#"><img src="../../asset/image/icon/icons8-twitter-30.png" alt="Logo Instagram"> Twitter</a></li>
+                            <li><a class="nav-footer" href="#"><img src="asset/image/icon/icons8-facebook-30.png" alt="Logo Instagram"> Facebook</a></li>
+                            <li><a class="nav-footer" href="#"><img src="asset/image/icon/icons8-twitter-30.png" alt="Logo Instagram"> Twitter</a></li>
                         </div>
                     </div>
                 </div>
