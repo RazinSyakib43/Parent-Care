@@ -429,10 +429,9 @@ input[type="radio"] {
 
 @media screen and (max-width: 991px) {
     #navbarResponsive{
-        background-color: #062C30;
+        background-color: #D0EBFF;
     }
     .nav-link{
-        color: #fff !important;
         margin-left: 10px;
         margin-right: 10px;
     }
