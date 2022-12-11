@@ -38,7 +38,7 @@ $row_test = mysqli_fetch_assoc($result_test);
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-light fixed-top py-4 bgcolor" data-aos="fade-down">
-            <div class="container">
+            <div class="container-xl">
                 <a class="navbar-brand" href="../../index.php">Parent<span>Care</span></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -307,8 +307,7 @@ $row_test = mysqli_fetch_assoc($result_test);
                     <div class="sosmed mt-lg-4">
                         <div class="row">
                             <div class="col-12">
-                                <a href="https://wa.me/6281393015244" target="_blank" class="infotxt"><i
-                                        class="bx bxl-whatsapp pe-2"></i></a>
+                                <a href="https://wa.me/6281393015244" target="_blank" class="infotxt"><i class="bx bxl-whatsapp pe-2"></i></a>
                                 <a href="#"><i class='bx bxl-instagram px-2'></i></a>
                                 <a href="#"><i class='bx bxl-facebook-circle ps-2'></i></a>
                             </div>
@@ -342,13 +341,10 @@ $row_test = mysqli_fetch_assoc($result_test);
                     <div class="info mt-4">
                         <h3>Media Sosial</h3>
                         <div class="footer-list mt-lg-3">
-                            <li><a class="nav-footer" href="#"><img src="../../asset/image/icon/icons8-instagram-30.png"
-                                        alt="Logo Instagram">
+                            <li><a class="nav-footer" href="#"><img src="../../asset/image/icon/icons8-instagram-30.png" alt="Logo Instagram">
                                     Instagram</a></li>
-                            <li><a class="nav-footer" href="#"><img src="../../asset/image/icon/icons8-facebook-30.png"
-                                        alt="Logo Instagram"> Facebook</a></li>
-                            <li><a class="nav-footer" href="#"><img src="../../asset/image/icon/icons8-twitter-30.png"
-                                        alt="Logo Instagram"> Twitter</a></li>
+                            <li><a class="nav-footer" href="#"><img src="../../asset/image/icon/icons8-facebook-30.png" alt="Logo Instagram"> Facebook</a></li>
+                            <li><a class="nav-footer" href="#"><img src="../../asset/image/icon/icons8-twitter-30.png" alt="Logo Instagram"> Twitter</a></li>
                         </div>
                     </div>
                 </div>

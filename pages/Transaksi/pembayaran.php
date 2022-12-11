@@ -40,6 +40,10 @@ if (!$_SESSION['email'] && !$_SESSION['password'] && $_SESSION['level'] != "Admi
     <link rel="stylesheet" href="assets/css/style.css">
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500;700&family=Poppins&display=swap" rel="stylesheet">
 </head>
 
 <body>

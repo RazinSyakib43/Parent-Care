@@ -27,6 +27,10 @@ $row_test = mysqli_fetch_assoc($result_test);
     <title>Articles | ParentCare</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500;700&family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../../styles/style.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -63,7 +67,7 @@ $row_test = mysqli_fetch_assoc($result_test);
     </header>
     <!-- Article -->
     <section class="article">
-        <div class="container">
+        <div class="container-xl">
             <div class="row mt-5">
                 <div class="col-12" data-aos="fade-up" data-aos-once="true" data-aos-delay="100">
                     <h2 class="section-heading">ARTICLE</h2>

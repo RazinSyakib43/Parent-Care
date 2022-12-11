@@ -30,7 +30,7 @@ $row_user = mysqli_fetch_assoc($result_user);
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-light fixed-top py-4 bgcolor" data-aos="fade-down">
-            <div class="container">
+            <div class="container-xl">
                 <a class="navbar-brand" href="#">Parent<span>Care</span></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarResponsive" aria-controls="navbarNavAltMarkup" aria-expanded="false"

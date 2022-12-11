@@ -425,3 +425,24 @@ input[type="radio"] {
 .foto-developer{
     border-radius: 15px;
 }
+
+
+@media screen and (max-width: 991px) {
+    #navbarResponsive{
+        background-color: #062C30;
+    }
+    .nav-link{
+        color: #fff !important;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .container-xl{
+        margin: 0;
+        padding: 0;
+    }
+    .btn-login{
+        margin-bottom: 30px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}

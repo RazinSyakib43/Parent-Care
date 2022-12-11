@@ -42,12 +42,16 @@ if (!$_SESSION['email'] && !$_SESSION['password'] && $_SESSION['level'] != "Admi
     <link rel="stylesheet" href="assets/css/style.css">
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500;700&family=Poppins&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-light fixed-top py-4 bgcolor" data-aos="fade-down">
-            <div class="container">
+            <div class="container-xl">
                 <a class="navbar-brand" href="#">Parent<span>Care</span></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarResponsive" aria-controls="navbarNavAltMarkup" aria-expanded="false"
